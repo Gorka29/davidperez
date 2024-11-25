@@ -20,30 +20,41 @@
   align-items: center;
   margin-bottom: 1.5rem;
 
-  .check-icon {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border: 2px solid white;
-    border-radius: 50%;
+  i {
+    font-size: 1.875rem;
     margin-right: 1.5rem;
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 12px;
-      height: 6px;
-      border-left: 2px solid white;
-      border-bottom: 2px solid white;
-      transform: translate(-50%, -70%) rotate(-45deg);
-    }
+    color: white;
   }
 
   span {
     font-size: 1.2rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
+  }
+}
+
+// Media queries para diferentes tamaños de pantalla
+@media screen and (max-width: 768px) {
+  .servicio {
+    i {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    span {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .servicio {
+    i {
+      font-size: 1.25rem;
+      margin-right: 0.75rem;
+    }
+
+    span {
+      font-size: 0.875rem;
+    }
   }
 }
