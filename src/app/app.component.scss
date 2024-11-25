@@ -4,7 +4,7 @@ body, .contenedor-principal {
   flex-direction: column;
   min-height: 100vh;
   color: white;
-  background-color: white;
+  background-color: rgb(248, 248, 248);
   position: relative;
 }
 
@@ -37,6 +37,7 @@ body, .contenedor-principal {
 
   h2 {
     color: #ccd6f6;
+
     margin-bottom: 40px;
     font-size: 32px;
     text-transform: uppercase;
@@ -53,7 +54,7 @@ body, .contenedor-principal {
     top: 64px;
     color: black;
     font-size:30px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
   }
 }
 
