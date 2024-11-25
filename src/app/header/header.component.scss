@@ -1,0 +1,15 @@
+$main-color: #0F172B;
+$main-color-oscuro: #0c1324;
+$main-color-hover: #182545;
+
+.inicio:hover, .sobre-mi:hover, .proyectos:hover, .contacto:hover {
+  color: $main-color-hover;
+}
+
+header {
+  background-color: white;
+}
+
+.seccion-actual {
+  background-color: $main-color;
+}
