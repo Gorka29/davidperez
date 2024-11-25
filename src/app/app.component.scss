@@ -4,7 +4,7 @@ body, .contenedor-principal {
   flex-direction: column;
   min-height: 100vh;
   color: white;
-  background-color: #0F172B;
+  background-color: white;
   position: relative;
 }
 
@@ -41,8 +41,9 @@ body, .contenedor-principal {
     font-size: 32px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    border-bottom: 2px solid #64ffda;
+    border-bottom: 2px solid black;
     padding: 10px 0 10px 0;
+    text-align: center;
   }
 
   .sticky-menu{
@@ -50,9 +51,9 @@ body, .contenedor-principal {
     width: 100%;
     margin-top: 50px;
     top: 64px;
-    color: white;
+    color: black;
     font-size:30px;
-    background-color: #0F172B;
+    background-color: white;
   }
 }
 
