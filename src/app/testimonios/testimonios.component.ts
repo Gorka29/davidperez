@@ -187,7 +187,15 @@ export class TestimoniosComponent implements OnInit, OnDestroy {
     }
   }
 
-  isScrollable(element: HTMLElement): boolean {
+  isAtBottom(element: HTMLElement): boolean {
+    return Math.abs(element.scrollHeight - element.scrollTop - element.clientHeight) < 1;
+  }
+
+  private isScrollable(element: HTMLElement): boolean {
     return element.scrollHeight > element.clientHeight;
+  }
+
+  isScrollableAndNotAtBottom(element: HTMLElement): boolean {
+    return this.isScrollable(element) && !this.isAtBottom(element);
   }
 }
