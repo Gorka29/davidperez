@@ -4,7 +4,7 @@
     [spaceBetween]="30"
     [pagination]="true"
     [autoplay]="true"
-    [loop]="true"
+    [loop]="false"
     [navigation]="true"
     class="w-full"
   >
@@ -12,9 +12,9 @@
       <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] p-8 mx-auto max-w-2xl h-full flex flex-col items-center justify-between">
         <div class="w-full flex-shrink-0">
           <img
-            src="https://placehold.co/100x100"
+            [src]="testimonio.imagen"
             alt="Foto perfil"
-            class="w-24 h-24 rounded-full object-cover mx-auto"
+            class="w-32 h-32 rounded-full object-cover mx-auto"
           >
         </div>
 
