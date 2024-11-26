@@ -1,4 +1,4 @@
-import { Component, Inject, PLATFORM_ID, OnInit, OnDestroy } from '@angular/core';
+import { Component, Inject, PLATFORM_ID, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { CommonModule } from '@angular/common';
 import { register } from 'swiper/element/bundle';
@@ -164,7 +164,10 @@ export class TestimoniosComponent implements OnInit, OnDestroy {
 
   ];
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private cdr: ChangeDetectorRef
+  ) {
     if (isPlatformBrowser(this.platformId)) {
       this.checkScreenSize();
       this.resizeObserver = () => this.checkScreenSize();
@@ -197,5 +200,9 @@ export class TestimoniosComponent implements OnInit, OnDestroy {
 
   isScrollableAndNotAtBottom(element: HTMLElement): boolean {
     return this.isScrollable(element) && !this.isAtBottom(element);
+  }
+
+  onScroll(): void {
+    this.cdr.detectChanges();
   }
 }

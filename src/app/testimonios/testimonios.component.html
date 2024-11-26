@@ -26,7 +26,7 @@
           <div class="relative w-full">
             <p class="text-lg leading-relaxed text-gray-700 italic mb-4 overflow-y-auto max-h-[235px] w-full text-center scroll-p-4 overscroll-contain"
                #testimonioTexto
-               (scroll)="testimonioTexto.dispatchEvent($event)">
+               (scroll)="onScroll()">
               {{testimonio.texto}}
             </p>
             <div *ngIf="isScrollableAndNotAtBottom(testimonioTexto)"
