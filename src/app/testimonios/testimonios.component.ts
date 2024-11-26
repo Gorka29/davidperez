@@ -98,7 +98,7 @@ export class TestimoniosComponent implements OnInit {
       "texto": "'La buena mano y las técnicas utilizadas en mi caso han dado un buen resultado, siempre acompañado de un riguroso estudio previo de la lesión. El trato siempre ha sido muy profesional y cercano, y eso se agradece'",
       "autor": "Jon Andoni Herrero",
       "profesion": "Crossfitter",
-      "imagen": "https://lh3.googleusercontent.com/d/16y4PJTZRqcHoN0RIg9DQG3ur27SYakxQ"
+      "imagen": "https://lh3.googleusercontent.com/d/1KKcw8kp2PYtE9-eMdm44uyrn4o3H-kpY"
     },
     {
       "id": 12,
@@ -168,7 +168,7 @@ export class TestimoniosComponent implements OnInit {
       "texto": "'Durante los tres años que estuve tratándome contigo, recibi un trato profesional y personal inmejorable, siempre preocupándote por la recuperación y por mí. Siempre que te necesitaba estabas dispuesto a ayudarme sin importar el problema que fuese. Si tuviese que volver en un futuro a tratarme con algún fisio no dudaría a volver a acudir a tí'",
       "autor": "Aimar Castresana",
       "profesion": "Futbolista CD Santurtzi",
-      "imagen": "https://lh3.googleusercontent.com/d/16y4PJTZRqcHoN0RIg9DQG3ur27SYakxQ"
+      "imagen": "https://lh3.googleusercontent.com/d/14-5CnPxKjQS96EI0QHVnxXFLGs9bo0HF"
     },
 
   ];
