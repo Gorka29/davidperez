@@ -5,7 +5,13 @@
     [pagination]="true"
     [autoplay]="true"
     [loop]="false"
-    [navigation]="true"
+    [pagination]="true"
+    [navigation]="{
+      el: '.swiper-pagination',
+      hideOnClick: true,
+      clickable: true,
+      enabled: !isMobile
+    }"
     class="w-full"
   >
     <swiper-slide *ngFor="let testimonio of testimonios" class="h-[600px]">

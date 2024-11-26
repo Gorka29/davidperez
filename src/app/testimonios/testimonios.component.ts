@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, PLATFORM_ID, OnInit, OnDestroy } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { CommonModule } from '@angular/common';
 import { register } from 'swiper/element/bundle';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -21,7 +22,10 @@ interface Testimonio {
   styleUrl: './testimonios.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class TestimoniosComponent implements OnInit {
+export class TestimoniosComponent implements OnInit, OnDestroy {
+  isMobile: boolean = false;
+  private resizeObserver: any;
+
   testimonios: Testimonio[] = [
     {
       "id": 1,
@@ -173,9 +177,25 @@ export class TestimoniosComponent implements OnInit {
 
   ];
 
-  constructor() {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    if (isPlatformBrowser(this.platformId)) {
+      this.checkScreenSize();
+      this.resizeObserver = () => this.checkScreenSize();
+      window.addEventListener('resize', this.resizeObserver);
+    }
+  }
+
+  private checkScreenSize(): void {
+    this.isMobile = window.innerWidth <= 768;
+  }
 
   ngOnInit() {
     register();
+  }
+
+  ngOnDestroy() {
+    if (isPlatformBrowser(this.platformId)) {
+      window.removeEventListener('resize', this.resizeObserver);
+    }
   }
 }
