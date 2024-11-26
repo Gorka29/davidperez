@@ -91,7 +91,7 @@ export class TestimoniosComponent implements OnInit {
       "texto": "'Mi experiencia contigo ha sido súper buena, muy buen profesional, te tuve en mi equipo y he elegido seguir tratándome contigo después ya que en toda mi carrera como deportista no he encontrado otro físio igual. Además de ser un excelente fisioterapeuta también una gran persona y haces que las horas en la clínica se hagan muy amenas!!'",
       "autor": "Joaquín Hinojosa",
       "profesion": "Futbolista JD Somorrostro",
-      "imagen": "https://lh3.googleusercontent.com/d/16y4PJTZRqcHoN0RIg9DQG3ur27SYakxQ"
+      "imagen": "https://lh3.googleusercontent.com/d/17XIhRcqE0gMG143OFf65Y0huqgeWzKBz"
     },
     {
       "id": 11,
