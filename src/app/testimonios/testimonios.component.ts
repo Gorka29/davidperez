@@ -186,4 +186,8 @@ export class TestimoniosComponent implements OnInit, OnDestroy {
       window.removeEventListener('resize', this.resizeObserver);
     }
   }
+
+  isScrollable(element: HTMLElement): boolean {
+    return element.scrollHeight > element.clientHeight;
+  }
 }

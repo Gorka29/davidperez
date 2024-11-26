@@ -9,14 +9,12 @@
     [navigation]="{
       el: '.swiper-navigation',
       clickable: true,
-      enabled: !isMobile
+      enabled: !isTablet
     }"
     class="w-full"
   >
     <swiper-slide *ngFor="let testimonio of testimonios" class="h-[600px]">
-      <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.1)] pt-4 pb-8 px-8 mx-auto max-w-2xl h-full flex flex-col items-center justify-between">
-
-
+      <div class="bg-white rounded-2xl pt-4 pb-8 px-8 mx-auto max-w-2xl h-[90%] flex flex-col items-center justify-between">
         <div class="w-full flex-grow flex flex-col items-center justify-center">
           <div class="w-full flex-shrink-0 mb-10">
             <img
@@ -25,9 +23,12 @@
               class="w-32 h-32 rounded-full object-cover mx-auto"
             >
           </div>
-          <p class="text-lg leading-relaxed text-gray-700 italic mb-4 overflow-y-auto max-h-[235px] w-full text-center">
-            {{testimonio.texto}}
-          </p>
+          <div class="relative w-full">
+            <p class="text-lg leading-relaxed text-gray-700 italic mb-4 overflow-y-auto max-h-[235px] w-full text-center scroll-p-4" #testimonioTexto>
+              {{testimonio.texto}}
+            </p>
+            <div *ngIf="isScrollable(testimonioTexto)" class="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+          </div>
           <h3 class="text-xl font-bold text-black mb-2">{{testimonio.autor}}</h3>
           <p class="text-gray-600">{{testimonio.profesion}}</p>
           <div class="text-yellow-400 text-xl flex-shrink-0">
@@ -41,8 +42,4 @@
       </div>
     </swiper-slide>
   </swiper-container>
-
-  <!-- Añadir paginación -->
-  <div class="swiper-pagination"></div>
-
 </div>
