@@ -91,14 +91,14 @@ export class TestimoniosComponent implements OnInit {
       "texto": "'Mi experiencia contigo ha sido súper buena, muy buen profesional, te tuve en mi equipo y he elegido seguir tratándome contigo después ya que en toda mi carrera como deportista no he encontrado otro físio igual. Además de ser un excelente fisioterapeuta también una gran persona y haces que las horas en la clínica se hagan muy amenas!!'",
       "autor": "Joaquín Hinojosa",
       "profesion": "Futbolista JD Somorrostro",
-      "imagen": "https://placehold.co/100x100"
+      "imagen": "https://lh3.googleusercontent.com/d/16y4PJTZRqcHoN0RIg9DQG3ur27SYakxQ"
     },
     {
       "id": 11,
       "texto": "'La buena mano y las técnicas utilizadas en mi caso han dado un buen resultado, siempre acompañado de un riguroso estudio previo de la lesión. El trato siempre ha sido muy profesional y cercano, y eso se agradece'",
       "autor": "Jon Andoni Herrero",
       "profesion": "Crossfitter",
-      "imagen": "https://placehold.co/100x100"
+      "imagen": "https://lh3.googleusercontent.com/d/16y4PJTZRqcHoN0RIg9DQG3ur27SYakxQ"
     },
     {
       "id": 12,
@@ -126,21 +126,21 @@ export class TestimoniosComponent implements OnInit {
       "texto": "'Siempre que he tratado contigo ha sido una auténtica maravilla. Una persona que no se cansa de trabajar para hacer la cosas al mejor nivel posible. Las sensaciones inmejorables. No dudaría en volver a acudir a un profesional tan cercano como David!'",
       "autor": "Beñat Gómez",
       "profesion": "Futbolista CD Santurtzi",
-      "imagen": "https://placehold.co/100x100"
+      "imagen": "https://lh3.googleusercontent.com/d/1OjkSXavd9QgLFh7Ot4Wl5pinFecwO_X1"
     },
     {
       "id": 16,
       "texto": "'Tenia una lesión que arrastraba desde hacía 3 meses y no la recuperaba. Hasta que fui a la clínica con David, me valoró con una ecografía y me trató dos veces con neuromodulación. Y con el tratamiento y readaptación se me fue la lesión en tres semanas'",
       "autor": "Ian Sanchez",
       "profesion": "Futbolista Be Quick 1887",
-      "imagen": "https://placehold.co/100x100"
+      "imagen": "https://lh3.googleusercontent.com/d/1a5iVTSU49DdonwMtRyGBhbNU1U2ln4NA"
     },
     {
       "id": 17,
       "texto": "'Llevaba arrastrando un dolor de hombro durante algún tiempo y no se iba. Fue tratarme contigo y al día siguiente ese dolor no existía, ni mínimamente. El trato fue excepcional y el tiempo invertido fue de élite. Hiciste de todo para ayudarme y con una sonrisa. Eres muy recomendable para que te traten'",
       "autor": "Aitzol Sáiz",
       "profesion": "",
-      "imagen": "https://placehold.co/100x100"
+      "imagen": "https://drive.google.com/file/d/1y-AVt8xUMglGeQbljO1BBX8CXJ1saLdd/view?usp=sharing"
     },
     {
       "id": 18,
@@ -154,7 +154,7 @@ export class TestimoniosComponent implements OnInit {
       "texto": "'La primera vez que sentí mejoría casi instantánea tras una sesión de fisioterapia. ¡Gracias David!'",
       "autor": "Arianna Mendez",
       "profesion": "Crossfitter",
-      "imagen": "https://placehold.co/100x100"
+      "imagen": "https://lh3.googleusercontent.com/d/1GBTs7DI88RGeRJ6Cf2lFVUfBRgl1qZLs"
     },
     {
       "id": 20,
@@ -168,7 +168,7 @@ export class TestimoniosComponent implements OnInit {
       "texto": "'Durante los tres años que estuve tratándome contigo, recibi un trato profesional y personal inmejorable, siempre preocupándote por la recuperación y por mí. Siempre que te necesitaba estabas dispuesto a ayudarme sin importar el problema que fuese. Si tuviese que volver en un futuro a tratarme con algún fisio no dudaría a volver a acudir a tí'",
       "autor": "Aimar Castresana",
       "profesion": "Futbolista CD Santurtzi",
-      "imagen": "https://placehold.co/100x100"
+      "imagen": "https://lh3.googleusercontent.com/d/16y4PJTZRqcHoN0RIg9DQG3ur27SYakxQ"
     },
 
   ];
