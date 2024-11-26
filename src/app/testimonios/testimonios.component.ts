@@ -23,7 +23,6 @@ interface Testimonio {
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TestimoniosComponent implements OnInit, OnDestroy {
-  isMobile: boolean = false;
   isTablet: boolean = false;
   private resizeObserver: any;
 
@@ -176,7 +175,6 @@ export class TestimoniosComponent implements OnInit, OnDestroy {
   }
 
   private checkScreenSize(): void {
-    this.isMobile = window.innerWidth <= 768;
     this.isTablet = window.innerWidth <= 968;
   }
 
