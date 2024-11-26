@@ -28,7 +28,7 @@ export class TestimoniosComponent implements OnInit {
       "texto": "'David ha sido un gran apoyo durante mi tratamiento. Su enfoque siempre ha sido muy profesional, adaptando cada sesión a mis necesidades específicas. Gracias a su dedicación y conocimientos, he notado una mejora significativa en la recuperación de diferentes lesiones sufridas durante la temporada. Recomiendo su trabajo por la seriedad y el cuidado que pone en cada detalle'",
       "autor": "Iñigo Baqué",
       "profesion": "Futbolista SD Gernika",
-      "imagen": "https://placehold.co/100x100"
+      "imagen": "https://lh3.googleusercontent.com/d/1Rflbb3WxtlfITSUtCKWNc6_atU-Q14tG"
     },
     {
       "id": 2,
@@ -63,7 +63,7 @@ export class TestimoniosComponent implements OnInit {
       "texto": "'Cuando he necesitado tratarme contigo cualquier lesión/molestia, la recuperación ha sido fantástica. Destacaría tu perfeccionismo y profesionalidad, además de tu gran atención al cliente. Recomendaría a todo el mundo tu servicio'",
       "autor": "Iñigo Arrieta",
       "profesion": "Futbolista CD Gazteluzarra",
-      "imagen": "https://placehold.co/100x100"
+      "imagen": "https://lh3.googleusercontent.com/d/1WGsCoRGgsv0Ix6dhH5AkjzY0D1dRlCqo"
     },
     {
       "id": 7,
@@ -140,7 +140,7 @@ export class TestimoniosComponent implements OnInit {
       "texto": "'Llevaba arrastrando un dolor de hombro durante algún tiempo y no se iba. Fue tratarme contigo y al día siguiente ese dolor no existía, ni mínimamente. El trato fue excepcional y el tiempo invertido fue de élite. Hiciste de todo para ayudarme y con una sonrisa. Eres muy recomendable para que te traten'",
       "autor": "Aitzol Sáiz",
       "profesion": "",
-      "imagen": "https://drive.google.com/file/d/1y-AVt8xUMglGeQbljO1BBX8CXJ1saLdd/view?usp=sharing"
+      "imagen": "https://lh3.googleusercontent.com/d/1y-AVt8xUMglGeQbljO1BBX8CXJ1saLdd"
     },
     {
       "id": 18,
@@ -161,7 +161,7 @@ export class TestimoniosComponent implements OnInit {
       "texto": "'El trato que recibí nada más lesionarme fue increíble. Fue una de las más difíciles que he pasado, pero cada día había algo bueno por lo que alegrarse, porque el tratamiento iba cada día a mejor. Sin duda el físio de cualquier deportista en el cual apoyarse en caso de lesión, preparación o evitar dolor. Desde que le conocí ya tengo a la persona adecuada para tratar mi cuerpo'",
       "autor": "Peio Mendizabal",
       "profesion": "Futbolista Zalla",
-      "imagen": "https://placehold.co/100x100"
+      "imagen": "https://lh3.googleusercontent.com/d/1AHAJGfI-KuNt8dRr9RnkszhbLUWu7A3R"
     },
     {
       "id": 21,
