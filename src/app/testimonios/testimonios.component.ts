@@ -141,34 +141,20 @@ export class TestimoniosComponent implements OnInit, OnDestroy {
     },
     {
       "id": 17,
-      "texto": "'Llevaba arrastrando un dolor de hombro durante algún tiempo y no se iba. Fue tratarme contigo y al día siguiente ese dolor no existía, ni mínimamente. El trato fue excepcional y el tiempo invertido fue de élite. Hiciste de todo para ayudarme y con una sonrisa. Eres muy recomendable para que te traten'",
-      "autor": "Aitzol Sáiz",
-      "profesion": "",
-      "imagen": "https://lh3.googleusercontent.com/d/1y-AVt8xUMglGeQbljO1BBX8CXJ1saLdd"
-    },
-    {
-      "id": 18,
-      "texto": "'La atención que recibi cuando me he tratado contigo ha sido increíble y muy profesional. Recomiendo que acudáis a él ante cualquier tipo de lesión. Es muy top!'",
-      "autor": "Iker Gonzalez",
-      "profesion": "Futbolista Dinamo San Juan",
-      "imagen": "https://lh3.googleusercontent.com/d/1aLjwp2rfzPiYodlZ-0M242iNdp50npuX"
-    },
-    {
-      "id": 19,
       "texto": "'La primera vez que sentí mejoría casi instantánea tras una sesión de fisioterapia. ¡Gracias David!'",
       "autor": "Arianna Mendez",
       "profesion": "Crossfitter",
       "imagen": "https://lh3.googleusercontent.com/d/1GBTs7DI88RGeRJ6Cf2lFVUfBRgl1qZLs"
     },
     {
-      "id": 20,
+      "id": 18,
       "texto": "'El trato que recibí nada más lesionarme fue increíble. Fue una de las más difíciles que he pasado, pero cada día había algo bueno por lo que alegrarse, porque el tratamiento iba cada día a mejor. Sin duda el físio de cualquier deportista en el cual apoyarse en caso de lesión, preparación o evitar dolor. Desde que le conocí ya tengo a la persona adecuada para tratar mi cuerpo'",
       "autor": "Peio Mendizabal",
       "profesion": "Futbolista Zalla",
       "imagen": "https://lh3.googleusercontent.com/d/1AHAJGfI-KuNt8dRr9RnkszhbLUWu7A3R"
     },
     {
-      "id": 21,
+      "id": 19,
       "texto": "'Durante los tres años que estuve tratándome contigo, recibi un trato profesional y personal inmejorable, siempre preocupándote por la recuperación y por mí. Siempre que te necesitaba estabas dispuesto a ayudarme sin importar el problema que fuese. Si tuviese que volver en un futuro a tratarme con algún fisio no dudaría a volver a acudir a tí'",
       "autor": "Aimar Castresana",
       "profesion": "Futbolista CD Santurtzi",
