@@ -1,7 +1,33 @@
+::ng-deep {
+  swiper-container {
+    --swiper-navigation-color: black;
+    --swiper-theme-color: black;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: black !important;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      color: black !important;
+    }
+  }
+}
+
+// Estilos adicionales por si acaso
+:host ::ng-deep {
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: black !important;
+  }
+}
+
+// También podemos ajustar el estilo de los puntos de navegación si lo necesitas
 .swiper-pagination-bullet {
-  @apply bg-black opacity-50;
+ @apply bg-black opacity-50;
 }
 
 .swiper-pagination-bullet-active {
-  @apply opacity-100;
+ @apply opacity-100;
 }
