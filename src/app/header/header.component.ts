@@ -103,7 +103,7 @@ export class HeaderComponent implements OnInit{
 
       // Timeline para la animación
       const timeline = gsap.timeline({
-        delay: 1.6 // Comienza después de las animaciones anteriores
+        delay: 2 // Comienza después de las animaciones anteriores
       });
 
       // Animar líneas verticales
@@ -120,7 +120,7 @@ export class HeaderComponent implements OnInit{
         opacity: 1,
         transformOrigin: "center center",
         ease: "power2.out"
-      }, "+=0.5"); // Comienza un poco antes de que termine la animación anterior
+      }, "+=0.2"); // Comienza un poco antes de que termine la animación anterior
 
     } catch (error) {
       console.error('Error durante la animación de los palos:', error);
