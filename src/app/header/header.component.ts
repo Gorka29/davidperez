@@ -20,24 +20,7 @@ export class HeaderComponent implements OnInit{
   constructor() {}
 
   ngOnInit(): void {
-    setTimeout(() => {
-      const texto = typeof document !== 'undefined' ? document.querySelector(this.SVG_SELECTOR) as SVGPathElement : null;
-      const dyp = typeof document !== 'undefined' ? document.querySelector('#dyp') as SVGPathElement : null;
-      const paloArriba1 = typeof document !== 'undefined' ? document.querySelector('#paloArriba1') as SVGLineElement : null;
-      const paloArriba2 = typeof document !== 'undefined' ? document.querySelector('#paloArriba2') as SVGPathElement : null;
-      const paloAbajo1 = typeof document !== 'undefined' ? document.querySelector('#paloAbajo1') as SVGLineElement : null;
-      const paloAbajo2 = typeof document !== 'undefined' ? document.querySelector('#paloAbajo2') as SVGPathElement : null;
 
-      if (texto) {
-        this.iniciarAnimacion(texto);
-      }
-      if (dyp) {
-        this.animarDyp(dyp);
-      }
-      if (paloArriba1 && paloArriba2 && paloAbajo1 && paloAbajo2) {
-        this.animarPalos(paloArriba1, paloArriba2, paloAbajo1, paloAbajo2);
-      }
-    }, this.ANIMATION_DELAY);
   }
 
   private iniciarAnimacion(texto: SVGPathElement): void {
