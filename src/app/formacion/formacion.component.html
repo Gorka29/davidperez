@@ -3,7 +3,7 @@
     <h2 class="text-2xl font-semibold text-gray-700 absolute z-10 left-4 md:left-8 top-1/2 -translate-y-1/2">FORMACIÓN</h2>
 
     <div class="flex justify-center overflow-x-hidden">
-        <div #scrollContainer class=" h-[280px] md:h-[400px] w-full">
+        <div #scrollContainer class=" h-[280px] md:h-[400px] w-full" style="-webkit-overflow-scrolling: touch; will-change: transform;">
           <!-- w-[280px] md:w-[400px] flex-shrink-0 pb-8 text-center transform -->
           <div #experienciasTrack class="flex gap-2 md:gap-8">
             <div *ngFor="let formacion of formaciones"
