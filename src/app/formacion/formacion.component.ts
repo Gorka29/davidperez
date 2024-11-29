@@ -105,48 +105,35 @@ export class FormacionComponent implements AfterViewInit, OnDestroy {
   }
 
   private initScrollAnimation() {
-    if (this.isMobile) {
-      // En móviles, usar scroll nativo en lugar de GSAP
-      const container = this.scrollContainer.nativeElement;
-      container.style.overflowX = 'scroll';
-      container.style.scrollSnapType = 'x mandatory';
+    const track = this.experienciasTrack.nativeElement;
+    const container = this.scrollContainer.nativeElement;
+    const totalWidth = track.scrollWidth;
+    const viewportWidth = container.offsetWidth;
+    const distance = totalWidth - viewportWidth;
 
-      const items = container.querySelectorAll('.w-[280px]');
-      items.forEach((item: HTMLElement) => {
-        item.style.scrollSnapAlign = 'center';
-      });
-    } else {
-      // Mantener la animación GSAP para desktop
-      const track = this.experienciasTrack.nativeElement;
-      const container = this.scrollContainer.nativeElement;
-      const totalWidth = track.scrollWidth;
-      const viewportWidth = container.offsetWidth;
-      const distance = totalWidth - viewportWidth;
+    const scrollConfig = {
+      trigger: container,
+      start: "center center",
+      end: "+=250%",
+      scrub: 1.5,
+      pin: true,
+      anticipatePin: 1,
+      pinSpacing: true,
+      snap: {
+        snapTo: "labels",
+        duration: {min: 0.2, max: 0.5},
+        delay: 0,
+        ease: "power1.inOut"
+      },
+      invalidateOnRefresh: true
+    };
 
-      const scrollConfig = {
-        trigger: container,
-        start: "center center",
-        end: "+=250%",
-        scrub: 1.5,
-        pin: true,
-        anticipatePin: 1,
-        pinSpacing: true,
-        snap: {
-          snapTo: "labels",
-          duration: {min: 0.2, max: 0.5},
-          delay: 0,
-          ease: "power1.inOut"
-        },
-        invalidateOnRefresh: true
-      };
+    const animation = gsap.to(track, {
+      x: -distance,
+      ease: "none",
+      scrollTrigger: scrollConfig as ScrollTrigger.Vars
+    });
 
-      const animation = gsap.to(track, {
-        x: -distance,
-        ease: "none",
-        scrollTrigger: scrollConfig as ScrollTrigger.Vars
-      });
-
-      this.scrollTrigger = animation.scrollTrigger || null;
-    }
+    this.scrollTrigger = animation.scrollTrigger || null;
   }
 }
