@@ -1,1 +1,24 @@
-<p>formacion works!</p>
+<div class="container pl-4 pr-4 md:pl-8 mx-auto overflow-hidden">
+  <div class="relative w-full">
+    <h2 class="text-2xl font-semibold text-gray-700 absolute z-10 left-4 md:left-8 top-1/2 -translate-y-1/2">FORMACIÓN</h2>
+
+    <div class="flex justify-center overflow-x-hidden">
+        <div #scrollContainer class=" h-[280px] md:h-[400px] w-full">
+          <!-- w-[280px] md:w-[400px] flex-shrink-0 pb-8 text-center transform -->
+          <div #experienciasTrack class="flex gap-2 md:gap-8">
+            <div *ngFor="let formacion of formaciones"
+                 class="w-[280px] md:w-[400px] flex-shrink-0 text-center transform">
+                <div class="flex flex-col items-center">
+                    <img [src]="formacion.imgURL"
+                         class="object-contain h-20 md:h-40 w-full mb-3 md:mb-6 p-1"
+                         alt="logo institución">
+                    <h4 class="text-lg md:text-2xl font-semibold text-gray-700 mb-2 md:mb-4">{{formacion.nombreCurso}}</h4>
+                    <p class="text-sm md:text-lg text-gray-600 mb-2 md:mb-3">{{formacion.centro}}</p>
+                    <p class="text-sm md:text-lg text-gray-500">{{formacion.periodo}}</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
