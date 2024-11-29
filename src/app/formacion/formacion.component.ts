@@ -20,12 +20,6 @@ export class FormacionComponent implements AfterViewInit, OnDestroy {
 
   formaciones = [
     {
-      nombreCurso: 'Formación en Métodos de Valoración en Fisioterapia Deportiva',
-      centro: 'FC Barcelona Innovation Hub',
-      periodo: 'Agosto 2024 - actualidad',
-      imgURL: '/assets/img/fcb.png'
-    },
-    {
       nombreCurso: 'Formación en Quiromasaje',
       centro: 'ISED',
       periodo: 'Septiembre 2016 - Marzo 2017',
@@ -111,20 +105,68 @@ export class FormacionComponent implements AfterViewInit, OnDestroy {
     const viewportWidth = container.offsetWidth;
     const distance = totalWidth - viewportWidth;
 
+    // const scrollConfig = this.isMobile ? {
+    //   trigger: container,
+    //   start: "center center",
+    //   end: () => `+=${distance * 1.5}px`,
+    //   scrub: true,
+    //   pin: true,
+    //   anticipatePin: 1,
+    //   pinSpacing: true,
+    //   invalidateOnRefresh: true
+    // } : {
+    //   trigger: container,
+    //   start: "center center",
+    //   end: "+=250%",
+    //   scrub: 1.5,
+    //   pin: true,
+    //   anticipatePin: 1,
+    //   pinSpacing: true,
+    //   snap: {
+    //     snapTo: "labels",
+    //     duration: {min: 0.2, max: 0.5},
+    //     delay: 0,
+    //     ease: "power1.inOut"
+    //   },
+    //   invalidateOnRefresh: true
+    // };
+
     const scrollConfig = {
+      // El elemento que activa la animación del scroll
       trigger: container,
+
+      // Define cuando comienza la animación - en este caso cuando el centro del contenedor
+      // llega al centro de la ventana
       start: "center center",
+
+      // Define cuando termina la animación - se extiende un 250% adicional del viewport
       end: "+=250%",
-      scrub: 1.5,
+
+      // Suaviza la animación con un valor de 1.5 segundos
+      scrub: 3,
+
+      // Fija el elemento en su posición mientras se ejecuta la animación
       pin: true,
+
+      // Prepara el pin antes de que comience la animación
       anticipatePin: 1,
+
+      // Mantiene el espacio ocupado por el elemento fijado
       pinSpacing: true,
+
+      // Configuración para el efecto "snap" (ajuste a puntos específicos)
       snap: {
+        // Ajusta a marcadores definidos como "labels"
         snapTo: "labels",
+        // Duración del efecto snap entre 0.2 y 0.5 segundos
         duration: {min: 0.2, max: 0.5},
+        // Sin retraso en el efecto snap
         delay: 0,
+        // Tipo de easing para suavizar el movimiento
         ease: "power1.inOut"
       },
+
+      // Recalcula los valores cuando cambia el tamaño de la ventana
       invalidateOnRefresh: true
     };
 
