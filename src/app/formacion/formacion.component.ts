@@ -143,7 +143,7 @@ export class FormacionComponent implements AfterViewInit, OnDestroy {
       end: "+=250%",
 
       // Suaviza la animación con un valor de 1.5 segundos
-      scrub: 3,
+      scrub: 1,
 
       // Fija el elemento en su posición mientras se ejecuta la animación
       pin: true,
