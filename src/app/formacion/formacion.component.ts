@@ -71,7 +71,7 @@ export class FormacionComponent implements OnInit, OnDestroy {
   duplicatedFormaciones: any[] = [];
   translateX: number = 0;
   private autoSlideInterval: any;
-  private readonly SLIDE_SPEED = 0.5; // pixels por frame
+  private readonly SLIDE_SPEED = 1; // Velocidad constante para todas las resoluciones
   private animationFrameId: number | null = null;
   isBrowser: boolean;
 
@@ -120,21 +120,23 @@ export class FormacionComponent implements OnInit, OnDestroy {
     }
   }
 
+  private getItemWidth(): number {
+    if (!this.isBrowser) return 250;
+
+    const screenWidth = document.documentElement.clientWidth;
+    if (screenWidth >= 1024) return screenWidth * 0.33333;
+    if (screenWidth >= 768) return screenWidth * 0.5;
+    return 250; // Ancho fijo para móviles
+  }
+
   private startAutoSlide() {
     const animate = () => {
       this.translateX -= this.SLIDE_SPEED;
+
+
       this.animationFrameId = requestAnimationFrame(animate);
     };
 
     animate();
-  }
-
-  private getItemWidth(): number {
-    if (!this.isBrowser) return 100;
-
-    const screenWidth = document.documentElement.clientWidth;
-    if (screenWidth >= 1024) return 33.333;
-    if (screenWidth >= 768) return 50;
-    return 100;
   }
 }
