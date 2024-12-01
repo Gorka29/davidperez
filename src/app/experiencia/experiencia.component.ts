@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit, AfterViewInit, inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import Swal from 'sweetalert2';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 @Component({
   selector: 'app-experiencia',
@@ -9,7 +11,8 @@ import Swal from 'sweetalert2';
   templateUrl: './experiencia.component.html',
   styleUrl: './experiencia.component.scss'
 })
-export class ExperienciaComponent {
+export class ExperienciaComponent implements OnInit, AfterViewInit {
+  private platformId = inject(PLATFORM_ID);
 
   experiencias = [
     {
@@ -68,11 +71,43 @@ export class ExperienciaComponent {
     },
   ];
 
+  ngOnInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      gsap.registerPlugin(ScrollTrigger);
+    }
+  }
+
+  ngAfterViewInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      const experienciaCards = document.querySelectorAll('.experiencia-card');
+      experienciaCards.forEach((card, index) => {
+        gsap.set(card, {
+          opacity: 0,
+          y: 100
+        });
+
+        gsap.to(card, {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 85%",
+            end: "top 65%",
+            toggleActions: "play none none reverse",
+            markers: false, // Para debug
+          }
+        });
+      });
+    }
+  }
+
   mostrarDetalles(experiencia: any) {
     Swal.fire({
       title: experiencia.nombreEmpresa,
       html: `
-        <img src="${experiencia.imgURL}" alt="${experiencia.nombreEmpresa}" class="mx-auto mb-4 w-32 h-32 object-contain">
+        <img src="${experiencia.imgURL}" alt="${experiencia.nombreEmpresa}" class="mx-auto mb-4 w-24 h-24 md:w-32 md:h-32 object-contain">
         <p><strong>${experiencia.periodo}</strong></p>
         <p class="mt-4 text-gray-600 leading-relaxed">${experiencia.descripcion}</p>
       `,
@@ -84,8 +119,8 @@ export class ExperienciaComponent {
         popup: 'animate__animated animate__fadeOutUp'
       },
       customClass: {
-        popup: 'rounded-popup'
-      }
+        popup: 'rounded-popup swal-mobile'
+      },
     });
   }
 
