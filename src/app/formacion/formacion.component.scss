@@ -1,0 +1,35 @@
+.slider-container {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: fit-content;
+}
+
+.slider-item {
+  flex: 0 0 auto;
+  width: 100vw;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .slider-item {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider-item {
+    width: 33.333vw;
+  }
+}
