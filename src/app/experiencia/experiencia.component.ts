@@ -72,11 +72,10 @@ export class ExperienciaComponent {
     Swal.fire({
       title: experiencia.nombreEmpresa,
       html: `
+        <img src="${experiencia.imgURL}" alt="${experiencia.nombreEmpresa}" class="mx-auto mb-4 w-32 h-32 object-contain">
         <p><strong>${experiencia.periodo}</strong></p>
         <p class="mt-4 text-gray-600 leading-relaxed">${experiencia.descripcion}</p>
       `,
-      imageUrl: experiencia.imgURL,
-      imageWidth: 200,
       imageAlt: experiencia.nombreEmpresa,
       showClass: {
         popup: 'animate__animated animate__bounceInUp'
