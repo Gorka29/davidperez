@@ -18,18 +18,20 @@
 .slider-item {
   flex: 0 0 auto;
   width: 100vw;
-  padding: 2rem;
+  padding: 0.5rem;
   box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
   .slider-item {
     width: 50vw;
+    padding: 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .slider-item {
     width: 33.333vw;
+    padding: 2rem;
   }
 }
