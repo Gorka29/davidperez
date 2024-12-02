@@ -107,8 +107,8 @@ export class ExperienciaComponent implements OnInit, AfterViewInit {
     Swal.fire({
       title: experiencia.nombreEmpresa,
       html: `
-        <img src="${experiencia.imgURL}" alt="${experiencia.nombreEmpresa}" class="mx-auto mb-4 w-24 h-24 md:w-32 md:h-32 object-contain">
-        <p><strong>${experiencia.periodo}</strong></p>
+        <p style="margin-top: -15px;">${experiencia.periodo}</p>
+        <img src="${experiencia.imgURL}" alt="${experiencia.nombreEmpresa}" class="mx-auto my-4 w-24 h-24 md:w-32 md:h-32 object-contain">
         <p class="mt-4 text-gray-600 leading-relaxed text-start">${experiencia.descripcion}</p>
       `,
       imageAlt: experiencia.nombreEmpresa,
@@ -119,7 +119,8 @@ export class ExperienciaComponent implements OnInit, AfterViewInit {
         popup: 'animate__animated animate__fadeOutUp'
       },
       customClass: {
-        popup: 'rounded-popup swal-mobile'
+        popup: 'rounded-popup swal-mobile',
+        confirmButton: 'bg-[#cdbfb0] hover:bg-[#bfad9c]'
       },
       confirmButtonText: 'Cerrar',
     });
