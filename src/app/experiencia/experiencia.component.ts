@@ -17,7 +17,7 @@ export class ExperienciaComponent implements OnInit, AfterViewInit {
   experiencias = [
     {
       nombreEmpresa: 'CD Santurtzi',
-      descripcion: '- Asistencia inmediata para jugadores de categorías inferiores <br> - Rehabilitación y readaptación personalizada <br> - Colaboración interdisciplinar con cuerpos técnicos del club <br> - Colaboración interdisciplinar con cuerpos técnicos del club',
+      descripcion: '- Asistencia inmediata para jugadores de categorías inferiores <br> - Rehabilitación y readaptación personalizada <br> - Colaboración interdisciplinar con cuerpos técnicos del club',
       periodo: 'Temporada 21/22',
       imgURL: '/assets/img/cdSanturtzi.png'
     },
