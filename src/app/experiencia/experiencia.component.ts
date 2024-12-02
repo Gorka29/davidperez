@@ -17,7 +17,7 @@ export class ExperienciaComponent implements OnInit, AfterViewInit {
   experiencias = [
     {
       nombreEmpresa: 'CD Santurtzi',
-      descripcion: 'Responsabilidades: <br> Rehabilitación personalizada para jugadores lesionados, asegurando su retorno seguro a la competición. Diseño e implementación de programas de readaptación física postlesión. Evaluación biomecánica y estrategias preventivas para reducir el riesgo de lesiones comunes en el deporte de alto rendimiento. Colaboración interdisciplinar con entrenadores y médicos del equipo.',
+      descripcion: '- Asistencia inmediata para jugadores de categorías inferiores <br> - Rehabilitación y readaptación personalizada <br> - Colaboración interdisciplinar con cuerpos técnicos del club <br> - Colaboración interdisciplinar con cuerpos técnicos del club',
       periodo: 'Temporada 21/22',
       imgURL: '/assets/img/cdSanturtzi.png'
     },
