@@ -17,7 +17,7 @@ export class ExperienciaComponent implements OnInit, AfterViewInit {
   experiencias = [
     {
       nombreEmpresa: 'CD Santurtzi',
-      descripcion: '- Asistencia inmediata para jugadores de categorías inferiores. <br> - Rehabilitación y readaptación personalizada. <br> - Colaboración interdisciplinar con cuerpos técnicos del club.',
+      descripcion: '- <b>Asistencia inmediata</b> para jugadores de categorías inferiores. <br> - <b>Rehabilitación</b> y <b>readaptación</b> personalizada.<br> - <b>Colaboración interdisciplinar</b> con cuerpos técnicos del club.',
       periodo: 'Temporada 21/22',
       imgURL: '/assets/img/cdSanturtzi.png'
     },
@@ -47,7 +47,7 @@ export class ExperienciaComponent implements OnInit, AfterViewInit {
     },
     {
       nombreEmpresa: 'Arenas Club de Getxo',
-      descripcion: '- <b>Fisioterapeuta</b> del equipo en 2ª RFEF. <br> - Responsable de la rehabilitación y readaptación de jugadores lesionados. <br> - Fisioterapeuta del Juvenil División de Honor Nacional. <br> - Encargado de la recuperación y readaptación de jugadores jóvenes con lesiones de larga duración. <br> - Responsable de diseñar planes preventivos para evitar lesiones.',
+      descripcion: '- Fisioterapeuta del equipo en 2ª RFEF. <br> - Responsable de la rehabilitación y readaptación de jugadores lesionados. <br> - Fisioterapeuta del Juvenil División de Honor Nacional. <br> - Encargado de la recuperación y readaptación de jugadores jóvenes con lesiones de larga duración. <br> - Responsable de diseñar planes preventivos para evitar lesiones.',
       periodo: 'Temporada 23/24',
       imgURL: '/assets/img/arenasClub.png'
     },
