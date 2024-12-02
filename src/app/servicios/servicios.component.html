@@ -7,34 +7,21 @@
 <div class="como-trabajo">
 
   <div class="lista-servicios">
-    <div class="servicio">
-      <i class="far fa-check-circle"></i>
-      <span>EVALUACIÓN INICIAL</span>
-    </div>
+    <div class="accordion-item" *ngFor="let servicio of serviciosLista">
+      <div class="servicio" (click)="toggleServicio(servicio)">
+        <div class="flex items-center justify-between w-full">
+          <div class="flex items-center">
+            <!-- <i class="far fa-check-circle mr-3"></i> -->
+            <i [class]="servicio.isOpen ? 'fas fa-minus transition-transform duration-300' : 'fas fa-plus transition-transform duration-300'"
+               [ngStyle]="{'transform': servicio.isOpen ? 'rotate(180deg)' : 'rotate(0deg)'}"></i>
+            <span class="text-xl md:text-2xl">{{servicio.titulo}}</span>
+          </div>
+        </div>
+      </div>
 
-    <div class="servicio">
-      <i class="far fa-check-circle"></i>
-      <span>VALORACIÓN NEUROMUSCULAR</span>
-    </div>
-
-    <div class="servicio">
-      <i class="far fa-check-circle"></i>
-      <span>INTERVENCIÓN TERAPÉUTICA</span>
-    </div>
-
-    <div class="servicio">
-      <i class="far fa-check-circle"></i>
-      <span>REEVALUACIÓN</span>
-    </div>
-
-    <div class="servicio destacado">
-      <i class="far fa-check-circle"></i>
-      <span>PROPUESTA DE REHADAPTACIÓN INDIVIDUALIZADA</span>
-    </div>
-
-    <div class="servicio">
-      <i class="far fa-check-circle"></i>
-      <span>SEGUIMIENTO CONTÍNUO</span>
+      <div class="contenido-servicio" [ngClass]="{'active': servicio.isOpen}">
+        <p class="text-lg">{{servicio.descripcion}}</p>
+      </div>
     </div>
   </div>
 

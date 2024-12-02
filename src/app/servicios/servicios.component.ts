@@ -9,6 +9,39 @@ import { CommonModule } from '@angular/common';
 })
 export class ServiciosComponent {
 
+  serviciosLista = [
+    {
+      titulo: 'EVALUACIÓN INICIAL',
+      descripcion: 'Realizamos una evaluación exhaustiva de tu estado físico actual, historial médico y objetivos específicos. Esto incluye análisis postural, rango de movimiento, fuerza muscular y patrones de movimiento para crear una base sólida para tu tratamiento.',
+      isOpen: false
+    },
+    {
+      titulo: 'VALORACIÓN NEUROMUSCULAR',
+      descripcion: 'Evaluamos en profundidad la función de tus músculos y nervios, incluyendo pruebas de fuerza, control motor, reflejos y coordinación. Esta información es crucial para entender cómo tu sistema nervioso interactúa con tus músculos.',
+      isOpen: false
+    },
+    {
+      titulo: 'INTERVENCIÓN TERAPÉUTICA',
+      descripcion: 'Aplicamos técnicas específicas de tratamiento basadas en los resultados de las evaluaciones previas. Esto puede incluir terapia manual, ejercicios terapéuticos, electroterapia y otras modalidades adaptadas a tus necesidades particulares.',
+      isOpen: false
+    },
+    {
+      titulo: 'REEVALUACIÓN',
+      descripcion: 'Monitoreamos regularmente tu progreso mediante evaluaciones periódicas para asegurar que el tratamiento está siendo efectivo. Esto nos permite ajustar el plan según sea necesario para optimizar los resultados.',
+      isOpen: false
+    },
+    {
+      titulo: 'PROPUESTA DE REHADAPTACIÓN INDIVIDUALIZADA',
+      descripcion: 'Desarrollamos un programa personalizado de rehabilitación que incluye ejercicios específicos, recomendaciones de actividad física y modificaciones en el estilo de vida, todo adaptado a tus necesidades y objetivos individuales.',
+      isOpen: false
+    },
+    {
+      titulo: 'SEGUIMIENTO CONTÍNUO',
+      descripcion: 'Mantenemos un seguimiento constante de tu evolución, ajustando el tratamiento según sea necesario y proporcionando apoyo continuo para asegurar resultados óptimos a largo plazo y prevenir recaídas.',
+      isOpen: false
+    },
+  ];
+
   servicios = [
     {
       nombreMaquina:'Presoterapia',
@@ -65,5 +98,9 @@ export class ServiciosComponent {
       imgURL: '/assets/img/readaptacion.jpg'
     }
   ];
+
+  toggleServicio(servicio: any) {
+    servicio.isOpen = !servicio.isOpen;
+  }
 
 }

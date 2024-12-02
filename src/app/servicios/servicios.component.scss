@@ -18,12 +18,22 @@
 .servicio {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 
   i {
     font-size: 1.875rem;
     margin-right: 1.5rem;
     color: black;
+    transition: transform 0.3s ease;
+  }
+
+  i.fa-minus {
+    transform: rotate(180deg);
+  }
+
+  i.fa-plus {
+    transform: rotate(0deg);
   }
 
   span {
@@ -39,10 +49,6 @@
       font-size: 1.5rem;
       margin-right: 1rem;
     }
-
-    span {
-      font-size: 1rem;
-    }
   }
 }
 
@@ -52,9 +58,27 @@
       font-size: 1.25rem;
       margin-right: 0.75rem;
     }
-
-    span {
-      font-size: 0.875rem;
-    }
   }
+}
+
+.accordion-item {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.servicio {
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contenido-servicio {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 1rem;
+}
+
+.contenido-servicio.active {
+  max-height: 500px;
+  padding: 1rem;
 }
