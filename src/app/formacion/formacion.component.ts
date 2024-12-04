@@ -23,49 +23,49 @@ export class FormacionComponent implements OnInit, OnDestroy {
       nombreCurso: 'Formación en Quiromasaje',
       centro: 'ISED',
       periodo: 'Septiembre 2016 - Marzo 2017',
-      imgURL: '/assets/img/ised.png'
+      imgURL: '/assets/img/fotosFormaciones/ised.webp'
     },
     {
       nombreCurso: 'Grado en Fisioterapia',
       centro: 'Escuela Universitaria Gimbernat Cantabria',
       periodo: '2023',
-      imgURL: '/assets/img/gimbernat.png'
+      imgURL: '/assets/img/fotosFormaciones/gimbernat.webp'
     },
     {
       nombreCurso: 'Curso de Electroneuroacupuntura (ENA)',
       centro: 'Zalla',
       periodo: 'Abril 2023 - Mayo 2023',
-      imgURL: '/assets/img/ena.png'
+      imgURL: '/assets/img/fotosFormaciones/ena.webp'
     },
     {
       nombreCurso: 'Postgrado en Fisioterapia Invasiva Avanzada NFD',
       centro: 'Neuromodulación Funcional del Dolor',
       periodo: 'Octubre 2023 - Marzo 2024',
-      imgURL: '/assets/img/postgrado.png'
+      imgURL: '/assets/img/fotosFormaciones/postgrado.webp'
     },
     {
       nombreCurso: 'Formación en Tendinopatías de Miembros inferiores',
       centro: 'FC Barcelona Innovation Hub',
       periodo: 'Julio 2023 - Agosto 2023',
-      imgURL: '/assets/img/fcb.png'
+      imgURL: '/assets/img/fotosFormaciones/fcb.webp'
     },
     {
       nombreCurso: 'Diplomado en Gestión de lesiones en deportes de equipo',
       centro: 'FC Barcelona Innovation Hub',
       periodo: 'Julio 2023 - Marzo 2024',
-      imgURL: '/assets/img/fcb.png'
+      imgURL: '/assets/img/fotosFormaciones/fcb.webp'
     },
     {
       nombreCurso: 'Curso de Fisioterapia en Pádel',
       centro: 'Padelmba',
       periodo: 'Marzo 2024',
-      imgURL: '/assets/img/padelmba.png'
+      imgURL: '/assets/img/fotosFormaciones/padelmba.webp'
     },
     {
       nombreCurso: 'Formación en Métodos de Valoración en Fisioterapia Deportiva',
       centro: 'FC Barcelona Innovation Hub',
       periodo: 'Agosto 2024 - actualidad',
-      imgURL: '/assets/img/fcb.png'
+      imgURL: '/assets/img/fotosFormaciones/fcb.webp'
     }
   ];
   duplicatedFormaciones: any[] = [];
