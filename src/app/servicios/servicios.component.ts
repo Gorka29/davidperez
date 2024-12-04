@@ -118,8 +118,4 @@ export class ServiciosComponent {
     servicio.isOpen = !servicio.isOpen;
   }
 
-  onImageLoad(servicio: any) {
-    servicio.imageLoaded = true;
-  }
-
 }

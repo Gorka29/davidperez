@@ -47,7 +47,6 @@
           <!-- Contenido real -->
           <ng-container *ngIf="servicio.imageLoaded">
             <img [src]="servicio.imgURL"
-                 (load)="onImageLoad(servicio)"
                  class="w-full h-48 object-cover"
                  [alt]="servicio.nombreMaquina"
                  [attr.loading]="servicio.imgLoading">
