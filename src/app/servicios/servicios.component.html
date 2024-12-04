@@ -30,16 +30,34 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div *ngFor="let servicio of servicios"
              class="bg-[#cdbfb0] rounded-lg overflow-hidden">
-          <img [src]="servicio.imgURL"
-               class="w-full h-48 object-cover"
-               [alt]="servicio.nombreMaquina"
-               [attr.loading]="servicio.imgLoading">
-          <div class="p-6">
-            <h3 class="text-2xl font-bold text-white mb-4 text-center">{{servicio.nombreMaquina}}</h3>
-            <p class="text-white text-md leading-relaxed">
-              {{servicio.descripcion}}
-            </p>
+          <!-- Skeleton loader -->
+          <div *ngIf="!servicio.imageLoaded"
+               class="animate-pulse">
+            <div class="w-full h-48 bg-gray-300"></div>
+            <div class="p-6">
+              <div class="h-8 bg-gray-300 rounded mb-4"></div>
+              <div class="space-y-3">
+                <div class="h-4 bg-gray-300 rounded"></div>
+                <div class="h-4 bg-gray-300 rounded"></div>
+                <div class="h-4 bg-gray-300 rounded"></div>
+              </div>
+            </div>
           </div>
+
+          <!-- Contenido real -->
+          <ng-container *ngIf="servicio.imageLoaded">
+            <img [src]="servicio.imgURL"
+                 (load)="onImageLoad(servicio)"
+                 class="w-full h-48 object-cover"
+                 [alt]="servicio.nombreMaquina"
+                 [attr.loading]="servicio.imgLoading">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-white mb-4 text-center">{{servicio.nombreMaquina}}</h3>
+              <p class="text-white text-md leading-relaxed">
+                {{servicio.descripcion}}
+              </p>
+            </div>
+          </ng-container>
         </div>
       </div>
     </div>

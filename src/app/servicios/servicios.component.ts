@@ -47,60 +47,79 @@ export class ServiciosComponent {
       nombreMaquina:'Presoterapia',
       descripcion: 'Es un tratamiento que utiliza presión de aire para estimular el sistema linfático y circulatorio, ayudando a reducir retención de líquidos, celulitis, fatiga y mejorar la circulación.',
       imgURL: '/assets/img/fotosServicios/presoterapia.webp',
-      imgLoading: 'lazy'
+      imgLoading: 'lazy',
+      imageLoaded: false
     },
     {
       nombreMaquina:'Pistola de masaje',
       descripcion: 'Es un dispositivo que emite vibraciones rápidas para relajar músculos, aliviar tensión, mejorar la circulación, reducir dolores y acelerar la recuperación tras actividades físicas intensas.',
       imgURL: '/assets/img/fotosServicios/pistolaMasaje.webp',
-      imgLoading: 'lazy'
+      imgLoading: 'lazy',
+      imageLoaded: false
     },
     {
       nombreMaquina:'Cupping',
       descripcion: 'Utiliza succión mediante copas colocadas sobre la piel para mejorar la circulación, aliviar dolores musculares, reducir inflamación, eliminar toxinas y promover relajación general.',
       imgURL: '/assets/img/fotosServicios/cupping.webp',
-      imgLoading: 'lazy'
+      imgLoading: 'lazy',
+      imageLoaded: false
     },
     {
       nombreMaquina:'TENS',
       descripcion: 'La electroestimulación TENS utiliza impulsos eléctricos para estimular nervios, aliviando dolores crónicos, musculares o articulares, promoviendo relajación, mejorando la recuperación y reduciendo inflamaciones localizadas.',
       imgURL: '/assets/img/fotosServicios/tens.webp',
-      imgLoading: 'lazy'
+      imgLoading: 'lazy',
+      imageLoaded: false
     },
     {
       nombreMaquina:'Neuromodulación',
       descripcion: 'La neuromodulación emplea estímulos eléctricos para optimizar la función neuromuscular, mejorar el rendimiento, acelerar la recuperación, aliviar dolores agudos o crónicos y prevenir lesiones mediante el control del sistema nervioso.',
       imgURL: '/assets/img/fotosServicios/neuromodulación.webp',
-      imgLoading: 'lazy'
+      imgLoading: 'lazy',
+      imageLoaded: false
     },
     {
       nombreMaquina:'Kinesiotape',
       descripcion: 'Es una cinta elástica adhesiva que se aplica sobre la piel para estabilizar músculos y articulaciones, reducir dolor, mejorar circulación, disminuir inflamación y facilitar la recuperación sin limitar el movimiento.',
       imgURL: '/assets/img/fotosServicios/kinesiotape.webp',
-      imgLoading: 'lazy'
+      imgLoading: 'lazy',
+      imageLoaded: false
     },
     {
       nombreMaquina:'Vendaje deportivo',
       descripcion: 'El vendaje funcional deportivo utiliza cintas adhesivas no elásticas o elásticas para limitar movimientos específicos, proteger articulaciones o músculos lesionados, prevenir recaídas, reducir dolor y permitir actividad deportiva controlada.',
       imgURL: '/assets/img/fotosServicios/vendajeDeportivo.webp',
-      imgLoading: 'lazy'
+      imgLoading: 'lazy',
+      imageLoaded: false
     },
     {
       nombreMaquina:'Valoración funcional',
       descripcion: 'Es una de las partes más importantes del tratamiento, con el objetivo de buscar los desequilibrios funcionales que estén provocando la lesión; y así poder encontrar las causas (descompensaciones funcionales) que conllevan a las consecuencias (lesión).',
       imgURL: '/assets/img/fotosServicios/valoracionFuncional.webp',
-      imgLoading: 'lazy'
+      imgLoading: 'lazy',
+      imageLoaded: false
     },
     {
       nombreMaquina:'Readaptación',
       descripcion: 'Es el plan de ejercicios que el fisioterapeuta plantea para que el paciente realice con el acompañamiento profesional para complementar los tratamientos de fisioterapia que realice para su recuperación.',
       imgURL: '/assets/img/fotosServicios/readaptacion.webp',
-      imgLoading: 'lazy'
+      imgLoading: 'lazy',
+      imageLoaded: false
     }
   ];
 
+  ngOnInit() {
+    this.servicios.forEach(servicio => {
+      servicio.imageLoaded = true;
+    });
+  }
+
   toggleServicio(servicio: any) {
     servicio.isOpen = !servicio.isOpen;
+  }
+
+  onImageLoad(servicio: any) {
+    servicio.imageLoaded = true;
   }
 
 }
