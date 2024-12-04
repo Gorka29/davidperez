@@ -4,18 +4,27 @@
         <div *ngFor="let experiencia of experiencias"
               class="experiencia-card w-full max-w-sm p-6 text-center">
             <div class="flex flex-col items-center justify-between min-h-[280px]">
-                <div class="flex flex-col items-center">
-                    <img
-                      [src]="experiencia.imgURL"
-                      class="object-contain h-32 w-32 mb-4 p-1"
-                      alt="logo empresa"
-                    >
-                    <h4 class="text-xl font-semibold text-gray-700 mb-2">{{experiencia.nombreEmpresa}}</h4>
-                    <p class="text-gray-500 text-md">{{experiencia.periodo}}</p>
+                <div *ngIf="!experiencia.imageLoaded"
+                     class="animate-pulse flex flex-col items-center w-full">
+                    <div class="bg-gray-300 h-32 w-32 rounded-lg mb-4"></div>
+                    <div class="h-6 bg-gray-300 rounded w-3/4 mb-2"></div>
+                    <div class="h-4 bg-gray-300 rounded w-1/2"></div>
+                    <div class="h-10 bg-gray-300 rounded w-24 mt-4"></div>
                 </div>
-                <button (click)="mostrarDetalles(experiencia)" class="px-4 py-2 bg-[#cdbfb0] text-white rounded-lg transition-colors duration-300">
-                    Ver más +
-                </button>
+
+                <ng-container *ngIf="experiencia.imageLoaded">
+                    <div class="flex flex-col items-center">
+                        <img [src]="experiencia.imgURL"
+                             class="object-contain h-32 w-32 mb-4 p-1"
+                             alt="logo empresa">
+                        <h4 class="text-xl font-semibold text-gray-700 mb-2">{{experiencia.nombreEmpresa}}</h4>
+                        <p class="text-gray-500 text-md">{{experiencia.periodo}}</p>
+                    </div>
+
+                    <button (click)="mostrarDetalles(experiencia)" class="px-4 py-2 bg-[#cdbfb0] text-white rounded-lg transition-colors duration-300">
+                      Ver más +
+                    </button>
+                </ng-container>
             </div>
         </div>
     </div>
