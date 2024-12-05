@@ -22,7 +22,7 @@
             id="full-name"
             placeholder="Tu nombre completo"
             required=""
-            class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="w-full px-4 py-3 rounded-md border-2 border-[#cdbfb0] focus:outline-none focus:ring-1 focus:ring-[#cbb9a5]"
           />
         </div>
 
@@ -34,7 +34,7 @@
             id="email-address"
             placeholder="tu@email.com"
             required=""
-            class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="w-full px-4 py-3 rounded-md border-2 border-[#cdbfb0] focus:outline-none focus:ring-1 focus:ring-[#cbb9a5]"
           />
         </div>
 
@@ -46,20 +46,24 @@
             rows="6"
             placeholder="Describe tus síntomas o consulta"
             required=""
-            class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="w-full px-4 py-3 rounded-md border-2 border-[#cdbfb0] focus:outline-none focus:ring-1 focus:ring-[#cbb9a5]"
           ></textarea>
         </div>
-
         <div>
           <input type="hidden" name="_subject" id="email-subject" value="Cita online">
           <button type="submit" class="w-full flex items-center justify-center gap-2 bg-black text-white py-3 px-4 rounded-lg hover:bg-gray-800 transition-colors mt-4">
-            <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.33325 14.6667L14.6666 1.33334M14.6666 1.33334H1.33325M14.6666 1.33334V14.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg> -->
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
             <span>Enviar mensaje</span>
           </button>
           <p id="form-response" class="mt-4 text-center text-sm text-gray-400"></p>
+        </div>
+        <div class="flex gap-6 !mt-10 justify-center">
+          <a href="https://www.instagram.com/davidperezfisio/" target="_blank" class="text-gray-800 hover:text-[#cdbfb0] transition-colors">
+            <i class="fab fa-instagram text-3xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/davidpérezdelgado/" target="_blank" class="text-gray-800 hover:text-[#cdbfb0] transition-colors">
+            <i class="fab fa-linkedin text-3xl"></i>
+          </a>
         </div>
       </form>
     </div>
