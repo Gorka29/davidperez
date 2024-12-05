@@ -1,6 +1,6 @@
 <div class="flex items-center justify-center mt-10 mb-10">
-  <h1 class="my-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-none tracking-tight text-gray-900 dark:text-black text-center">
-    ¿Cómo trabajo?<span class="underline underline-offset-3 decoration-8 decoration-yellow-300 dark:decoration-yellow-300"></span>
+  <h1 class="my-4 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-none tracking-tight text-gray-900 dark:text-black text-center">
+    Protocolo de Evaluación Física<span class="underline underline-offset-3 decoration-8 decoration-yellow-300 dark:decoration-yellow-300"></span>
   </h1>
 </div>
 
@@ -9,13 +9,10 @@
   <div class="lista-servicios">
     <div class="accordion-item" *ngFor="let servicio of serviciosLista">
       <div class="servicio" (click)="toggleServicio(servicio)">
-        <div class="flex items-center justify-between w-full">
-          <div class="flex items-center">
-            <!-- <i class="far fa-check-circle mr-3"></i> -->
-            <i [class]="servicio.isOpen ? 'fas fa-minus transition-transform duration-300' : 'fas fa-plus transition-transform duration-300'"
-               [ngStyle]="{'transform': servicio.isOpen ? 'rotate(180deg)' : 'rotate(0deg)'}"></i>
-            <span class="text-xl md:text-2xl">{{servicio.titulo}}</span>
-          </div>
+        <div class="flex items-center justify-between w-full text-center">
+          <i [innerHTML]="servicio.icon | safeHtml"></i>
+          <span class="text-xl md:text-2xl">{{servicio.titulo}}</span>
+          <i class="fas transition-all duration-300" [ngClass]="{'fa-chevron-down': !servicio.isOpen, 'fa-chevron-up': servicio.isOpen}"></i>
         </div>
       </div>
 
