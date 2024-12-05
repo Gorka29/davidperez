@@ -11,7 +11,7 @@
       <div class="servicio" (click)="toggleServicio(servicio)">
         <div class="flex items-center justify-between w-full text-center">
           <i [innerHTML]="servicio.icon | safeHtml"></i>
-          <span class="text-xl md:text-2xl">{{servicio.titulo}}</span>
+          <span class="mx-2 text-lg md:text-2xl">{{servicio.titulo}}</span>
           <i class="fas transition-all duration-300" [ngClass]="{'fa-chevron-down': !servicio.isOpen, 'fa-chevron-up': servicio.isOpen}"></i>
         </div>
       </div>
