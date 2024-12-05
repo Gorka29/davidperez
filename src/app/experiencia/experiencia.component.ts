@@ -132,7 +132,7 @@ export class ExperienciaComponent implements OnInit, AfterViewInit {
       },
       customClass: {
         popup: 'rounded-popup swal-mobile',
-        confirmButton: 'bg-[#cdbfb0] hover:bg-[#bfad9c]'
+        confirmButton: 'px-4 py-2 font-semibold bg-white border-[2px] border-solid border-[#cdbfb0] text-[#cdbfb0] rounded-lg transition-colors duration-300 hover:bg-[#b5a797] hover:text-white'
       },
       confirmButtonText: 'Cerrar',
     });
