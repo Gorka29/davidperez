@@ -8,7 +8,7 @@ $main-color-hover: #182545;
 
 header {
   background-color: rgba(205, 191, 176, 0.8);
-  color: $main-color;
+  color: white;
   /* El saturate() ajusta la saturación de colores - 180% aumenta la intensidad de los colores en un 80% adicional */
   backdrop-filter: saturate(180%) blur(25px);
   -webkit-backdrop-filter: saturate(180%) blur(25px);
