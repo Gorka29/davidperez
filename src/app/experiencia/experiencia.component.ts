@@ -45,7 +45,7 @@ export class ExperienciaComponent implements OnInit, AfterViewInit {
     },
     {
       nombreEmpresa: 'Clínica Jon Ibañez Fisioterapia',
-      descripcion: '- Uso de <b>ecografía</b> y <b>procedimientos invasivos</b> para <b>diagnóstico</b> y <b>recuperación</b>. <br> - Atención a <b>pacientes privados</b>, especialmente <b>deportistas</b>, para <b>rendimiento</b> y <b>recuperación</b>. <br> - <b>Rehabilitación</b> de <b>lesiones traumáticas</b> y <b>postquirúrgicas</b>.',
+      descripcion: '- Uso de <b>ecografía</b> y procedimientos invasivos para <b>diagnóstico</b> y <b>recuperación</b>. <br> - Atención a pacientes privados, especialmente <b>deportistas</b>, para <b>rendimiento</b> y <b>recuperación</b>. <br> - Rehabilitación de lesiones traumáticas y postquirúrgicas.',
       periodo: 'Noviembre 2023 - Julio 2024',
       imgURL: '/assets/img/fotosExperiencias/clinica-jon-ibanez.webp',
       imageLoaded: false
