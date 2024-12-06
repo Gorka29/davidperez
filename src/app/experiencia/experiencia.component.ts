@@ -24,56 +24,56 @@ export class ExperienciaComponent implements OnInit, AfterViewInit {
     },
     {
       nombreEmpresa: 'Centro Joseba Alonso Fisioterapia Avanzada',
-      descripcion: '- Evaluación y tratamiento mediante ecografía y técnicas invasivas. <br> - Uso de aparatología de última generación en fisioterapia. <br> - Atención a pacientes privados y de mutuas. <br> - Rehabilitación de pacientes con lesiones traumáticas y postquirúrgicas.',
+      descripcion: '- <b>Evaluación</b> y <b>tratamiento</b> con <b>ecografía</b> y <b>técnicas invasivas</b>. <br> - Uso de <b>aparatología avanzada</b> en fisioterapia. <br> - Atención a <b>pacientes privados</b> y de <b>mutuas</b>. <br> - <b>Rehabilitación</b> de pacientes con <b>lesiones traumáticas</b> y <b>postquirúrgicas</b>.',
       periodo: 'Junio 2022 - Julio 2023',
       imgURL: '/assets/img/fotosExperiencias/clinicaJosebaAlonso.webp',
       imageLoaded: false
     },
     {
       nombreEmpresa: 'ITF Getxo',
-      descripcion: '- Recuperación de lesiones: Asistencia inmediata para lesiones musculares y articulares durante la competición. <br> - Prevención de lesiones: Tratamientos preventivos y asesoramiento para evitar lesiones de los tenistas. <br> - Rehabilitación postpartido: Técnicas de recuperación para aliviar fatiga y optimizar el rendimiento.',
+      descripcion: '- Asistencia inmediata para <b>lesiones musculares</b> y <b>articulares</b> en <b>competición</b>. <br> - Realización de tratamientos <b>preventivos</b> y <b>asesoramiento</b> para evitar <b>lesiones</b> de los <b>tenistas</b>. <br> - Aplicación de técnicas para <b>aliviar fatiga</b> y <b>optimizar rendimiento</b>.',
       periodo: 'Julio 2023',
       imgURL: '/assets/img/fotosExperiencias/itf.webp',
       imageLoaded: false
     },
     {
       nombreEmpresa: 'CD Santurtzi',
-      descripcion: '- Atención urgente a jugadores de categorías inferiores: Proporcioné asistencia rápida y eficaz a jóvenes jugadores en su desarrollo. <br> - Rehabilitación y readaptación individualizada: Implementé planes de recuperación personalizados para optimizar la reintegración deportiva. <br> - Asistencia al primer equipo y ascenso logrado: Brindé soporte físico al primer equipo, contribuyendo al ascenso a la 3ª RFEF.',
+      descripcion: '- Creación de <b>planes de recuperación individualizados</b> para la vuelta a la competición. <br> - Atención <b>urgente</b>, <b>rápida</b> y <b>eficaz</b> a jugadores de la cantera. <br> - Soporte al primer equipo, logrando un <b>ascenso a 3ª RFEF</b>.',
       periodo: 'Temporada 23/24',
       imgURL: '/assets/img/fotosExperiencias/cdSanturtzi.webp',
       imageLoaded: false
     },
     {
       nombreEmpresa: 'Clínica Jon Ibañez Fisioterapia',
-      descripcion: '- Valoración y tratamiento con ecografía y procedimientos invasivos: Uso de ecografía para diagnóstico y técnicas invasivas para tratar lesiones y mejorar la recuperación. <br> - Atención a pacientes privados, especialmente en el ámbito deportivo: Proporcionar servicios de fisioterapia a pacientes particulares, enfocándose en deportistas para optimizar su rendimiento y recuperación. <br> - Rehabilitación de pacientes con lesiones traumáticas y postquirúrgicas: Diseño de planes de recuperación para personas que sufren lesiones traumáticas o intervenciones quirúrgicas, restaurando su funcionalidad y movilidad.',
+      descripcion: '- Uso de <b>ecografía</b> y <b>procedimientos invasivos</b> para <b>diagnóstico</b> y <b>recuperación</b>. <br> - Atención a <b>pacientes privados</b>, especialmente <b>deportistas</b>, para <b>rendimiento</b> y <b>recuperación</b>. <br> - <b>Rehabilitación</b> de <b>lesiones traumáticas</b> y <b>postquirúrgicas</b>.',
       periodo: 'Noviembre 2023 - Julio 2024',
       imgURL: '/assets/img/fotosExperiencias/clinica-jon-ibanez.webp',
       imageLoaded: false
     },
     {
       nombreEmpresa: 'Arenas Club de Getxo',
-      descripcion: '- Fisioterapeuta del equipo en 2ª RFEF. <br> - Responsable de la rehabilitación y readaptación de jugadores lesionados. <br> - Fisioterapeuta del Juvenil División de Honor Nacional. <br> - Encargado de la recuperación y readaptación de jugadores jóvenes con lesiones de larga duración. <br> - Responsable de diseñar planes preventivos para evitar lesiones.',
+      descripcion: '- Fisioterapeuta y readaptador en <b>2ª RFEF</b>. <br> - Fisioterapeuta del <b>Juvenil División de Honor Nacional</b>. <br> - <b>Recuperación</b> de lesiones de <b>larga duración</b> en jugadores jóvenes. <br> - Diseño de <b>planes preventivos</b> para evitar <b>lesiones</b>.',
       periodo: 'Temporada 23/24',
       imgURL: '/assets/img/fotosExperiencias/arenasClub.webp',
       imageLoaded: false
     },
     {
       nombreEmpresa: 'ITF Getxo',
-      descripcion: '- Atención inmediata a los tenistas antes y después de la competición. <br> - Tratamientos de recuperación muscular y mejora de rendimiento. <br> - Aplicación de vendajes deportivos para garantizar la protección durante la competición.',
+      descripcion: '- <b>Atención inmediata a tenistas</b> antes y después de la competición. <br> - <b>Recuperación muscular</b> y mejora de <b>rendimiento</b>. <br> - Aplicación de <b>vendajes deportivos</b> para protección en competición.',
       periodo: 'Julio 2024',
       imgURL: '/assets/img/fotosExperiencias/itf.webp',
       imageLoaded: false
     },
     {
       nombreEmpresa: 'Club Portugalete',
-      descripcion: '- Fisioterapeuta del equipo en 3ª RFEF. <br> - Encargado de la rehabilitación y readaptación de jugadores lesionados. <br> - Colaboración con los diferentes profesionales del club en trabajo interdisciplinario. <br> - Diseño de planes preventivos basados en valoraciones neuromusculares para prevenir lesiones.',
+      descripcion: '- Fisioterapeuta en <b>3ª RFEF</b>. <br> - Rehabilitación y readaptación de jugadores lesionados. <br> - Trabajo <b>interdisciplinario</b> con profesionales del club. <br> - Diseño de <b>planes preventivos</b> basados en <b>valoraciones neuromusculares</b>.',
       periodo: 'Temporada 24/25',
       imgURL: '/assets/img/fotosExperiencias/clubPortugalete.webp',
       imageLoaded: false
     },
     {
       nombreEmpresa: 'Metropolitan Bilbao',
-      descripcion: '- Aplicación de técnicas invasivas: Uso de  neuromodulación para aliviar el dolor muscular, reducir la inflamación y acelerar la recuperación funcional en zonas específicas. <br> - Vendajes neuromusculares: Colocación de cintas elásticas para mejorar la circulación, reducir el dolor, facilitar el movimiento y prevenir lesiones musculares o articulares durante la actividad física. <br> - Técnicas manuales: Masajes, estiramientos y movilizaciones articulares para aliviar tensiones musculares, mejorar la movilidad, reducir el dolor y restaurar la función musculoesquelética. <br> - Gestión de planes de rehabilitación: Diseño y seguimiento de planes personalizados de ejercicios y terapia activa para mejorar la movilidad, fortalecer musculatura y prevenir futuras lesiones.',
+      descripcion: '- Elaboración y supervisión de <b>planes personalizados</b>. <br> - Uso de <b>técnicas manuales</b>. <br> - Implementación de técnicas invasivas como la <b>neuromodulación</b>. <br> - Realización de <b>vendajes deportivos</b>.',
       periodo: 'Octubre 2024 - Actualidad',
       imgURL: '/assets/img/fotosExperiencias/metropolitan.webp',
       imageLoaded: false
