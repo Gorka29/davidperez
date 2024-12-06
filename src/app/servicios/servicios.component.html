@@ -1,59 +1,58 @@
-<div class="flex items-center justify-center mt-10 mb-10">
-  <h1 class="my-4 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-none tracking-tight text-gray-900 dark:text-black text-center">
-    Protocolo de Evaluación Física<span class="underline underline-offset-3 decoration-8 decoration-yellow-300 dark:decoration-yellow-300"></span>
-  </h1>
-</div>
-
-<div class="como-trabajo">
-
-  <div class="lista-servicios">
-    <div class="accordion-item" *ngFor="let servicio of serviciosLista">
-      <div class="servicio" (click)="toggleServicio(servicio)">
-        <div class="flex items-center justify-between w-full text-center">
-          <i [innerHTML]="servicio.icon | safeHtml"></i>
-          <span class="mx-2 text-lg md:text-2xl">{{servicio.titulo}}</span>
-          <i class="fas transition-all duration-300" [ngClass]="{'fa-chevron-down': !servicio.isOpen, 'fa-chevron-up': servicio.isOpen}"></i>
-        </div>
-      </div>
-
-      <div class="contenido-servicio" [ngClass]="{'active': servicio.isOpen}">
-        <p class="text-lg">{{servicio.descripcion}}</p>
-      </div>
-    </div>
+<div class="contenido">
+  <div class="flex items-center justify-center mt-10 mb-10">
+    <h1 class="my-4 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-none tracking-tight text-gray-900 dark:text-black text-center">
+      Protocolo de Evaluación Física<span class="underline underline-offset-3 decoration-8 decoration-yellow-300 dark:decoration-yellow-300"></span>
+    </h1>
   </div>
 
-  <div class="lista-maquinas">
-    <div class="container mx-auto py-12">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div *ngFor="let servicio of servicios"
-             class="bg-[#cdbfb0] rounded-lg overflow-hidden">
-          <!-- Skeleton loader -->
-          <div *ngIf="!servicio.imageLoaded"
-               class="animate-pulse">
-            <div class="w-full h-48 bg-gray-300"></div>
-            <div class="p-6">
-              <div class="h-8 bg-gray-300 rounded mb-4"></div>
-              <div class="space-y-3">
-                <div class="h-4 bg-gray-300 rounded"></div>
-                <div class="h-4 bg-gray-300 rounded"></div>
-                <div class="h-4 bg-gray-300 rounded"></div>
+  <div class="como-trabajo">
+    <div class="lista-servicios">
+      <div class="accordion-item" *ngFor="let servicio of serviciosLista">
+        <div class="servicio" (click)="toggleServicio(servicio)">
+          <div class="flex items-center justify-between w-full text-center">
+            <i [innerHTML]="servicio.icon | safeHtml"></i>
+            <span class="mx-2 text-lg md:text-2xl">{{servicio.titulo}}</span>
+            <i class="fas transition-all duration-300" [ngClass]="{'fa-chevron-down': !servicio.isOpen, 'fa-chevron-up': servicio.isOpen}"></i>
+          </div>
+        </div>
+        <div class="contenido-servicio" [ngClass]="{'active': servicio.isOpen}">
+          <p class="text-lg">{{servicio.descripcion}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="lista-maquinas">
+      <div class="container mx-auto py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div *ngFor="let servicio of servicios"
+              class="bg-[#cdbfb0] rounded-lg overflow-hidden">
+            <!-- Skeleton loader -->
+            <div *ngIf="!servicio.imageLoaded"
+                class="animate-pulse">
+              <div class="w-full h-48 bg-gray-300"></div>
+              <div class="p-6">
+                <div class="h-8 bg-gray-300 rounded mb-4"></div>
+                <div class="space-y-3">
+                  <div class="h-4 bg-gray-300 rounded"></div>
+                  <div class="h-4 bg-gray-300 rounded"></div>
+                  <div class="h-4 bg-gray-300 rounded"></div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Contenido real -->
-          <ng-container *ngIf="servicio.imageLoaded">
-            <img [src]="servicio.imgURL"
-                 class="w-full h-48 object-cover"
-                 [alt]="servicio.nombreMaquina"
-                 [attr.loading]="servicio.imgLoading">
-            <div class="p-6">
-              <h3 class="text-2xl font-bold text-white mb-4 text-center">{{servicio.nombreMaquina}}</h3>
-              <p class="text-white text-md leading-relaxed">
-                {{servicio.descripcion}}
-              </p>
-            </div>
-          </ng-container>
+            <!-- Contenido real -->
+            <ng-container *ngIf="servicio.imageLoaded">
+              <img [src]="servicio.imgURL"
+                  class="w-full h-48 object-cover"
+                  [alt]="servicio.nombreMaquina"
+                  [attr.loading]="servicio.imgLoading">
+              <div class="p-6">
+                <h3 class="text-2xl font-bold text-white mb-4 text-center">{{servicio.nombreMaquina}}</h3>
+                <p class="text-white text-md leading-relaxed">
+                  {{servicio.descripcion}}
+                </p>
+              </div>
+            </ng-container>
+          </div>
         </div>
       </div>
     </div>
