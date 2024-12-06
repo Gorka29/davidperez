@@ -1,5 +1,12 @@
-*{
-  font-family: 'Crimson Text', serif;
+@font-face {
+  font-family: 'Hellix';
+  src: url('/assets/fonts/Hellix-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Hellix', 'Crimson Text', serif;
 }
 
 // Asumiendo que tienes un contenedor principal (por ejemplo, el body o un div que envuelve todo)

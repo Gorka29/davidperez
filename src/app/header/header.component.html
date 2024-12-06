@@ -28,25 +28,15 @@
           </defs>
       </svg>
 
-
-        <!-- Logo en negro (PNG) -->
-        <!-- <img
-          src="https://lh3.googleusercontent.com/d/1rMZNyV8MInVEwRZwZd1SZcFbdgq-azh2"
-          alt="Logo de David Perez"
-          class="h-16 w-48"
-          referrerpolicy="no-referrer"
-        > -->
-
-
-        <!-- Botón de hamburguesa solo para móviles -->
-        <button class="xl:hidden absolute right-4 w-6 h-6 flex items-center justify-center" (click)="toggleMenu()">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute transition-all duration-300 ease-in-out main-color" [ngClass]="{'opacity-0 rotate-90': menuAbierto, 'opacity-100 rotate-0': !menuAbierto}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute transition-all duration-300 ease-in-out main-color" [ngClass]="{'opacity-100 rotate-0': menuAbierto, 'opacity-0 -rotate-90': !menuAbierto}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+      <!-- Botón de hamburguesa solo para móviles -->
+      <button class="xl:hidden absolute right-4 w-6 h-6 flex items-center justify-center" (click)="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute transition-all duration-300 ease-in-out main-color" [ngClass]="{'opacity-0 rotate-90': menuAbierto, 'opacity-100 rotate-0': !menuAbierto}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute transition-all duration-300 ease-in-out main-color" [ngClass]="{'opacity-100 rotate-0': menuAbierto, 'opacity-0 -rotate-90': !menuAbierto}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
       </div>
 
       <!-- Menú para pantallas grandes -->
