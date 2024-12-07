@@ -14,37 +14,37 @@ export class ServiciosComponent {
     {
       icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-spreadsheet"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M8 13h2"/><path d="M14 13h2"/><path d="M8 17h2"/><path d="M14 17h2"/></svg>',
       titulo: 'EVALUACIÓN INICIAL',
-      descripcion: 'Realizo una evaluación exhaustiva de tu estado físico actual, historial médico y objetivos específicos. Esto incluye análisis postural, rango de movimiento, fuerza muscular y patrones de movimiento para crear una base sólida para tu tratamiento.',
+      descripcion: 'Realizo una <b>evaluación exhaustiva</b> de tu estado físico actual, considerando tu historial médico y tus objetivos específicos. Este proceso incluye un análisis postural detallado, la evaluación del rango de movimiento, la fuerza muscular y los patrones de movimiento. Estos elementos son esenciales para crear una base sólida que guíe el diseño de un <b>tratamiento personalizado</b>, asegurando que sea efectivo y adaptado a tus necesidades particulares.',
       isOpen: false
     },
     {
       icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg>',
-      titulo: 'VALORACIÓN NEUROMUSCULAR',
-      descripcion: 'Evalúo en profundidad la función de tus músculos y nervios, incluyendo pruebas de fuerza, control motor, reflejos y coordinación. Esta información es crucial para entender cómo tu sistema nervioso interacta con tus músculos.',
+      titulo: 'VALORAC<IÓN NEUROMUSCULAR',
+      descripcion: '<b>Evalúo en profundidad</b> la función de tus músculos y nervios, realizando una variedad de pruebas que incluyen la evaluación de fuerza muscular y el control motor. Este <b>análisis detallado</b> es crucial para comprender cómo tu sistema nervioso interacta con tus músculos, identificando posibles desbalances, déficits o áreas de mejora. La información obtenida permite diseñar un <b>tratamiento eficaz</b> y específico, que optimice tu funcionamiento neuromuscular y te ayude a <b>alcanzar tus objetivos de salud.</b>',
       isOpen: false
     },
     {
       icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-pulse"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg>',
       titulo: 'INTERVENCIÓN TERAPÉUTICA',
-      descripcion: 'Aplico técnicas específicas de tratamiento basadas en los resultados de las evaluaciones previas. Esto puede incluir terapia manual, ejercicios terapéuticos, electroterapia y otras modalidades adaptadas a tus necesidades particulares.',
+      descripcion: 'Aplico <b>técnicas específicas de tratamiento</b> diseñadas en base a los resultados obtenidos durante las evaluaciones previas. Estas técnicas pueden incluir <b>terapia manual</b> para mejorar la movilidad y aliviar el dolor, <b>ejercicios terapéuticos personalizados</b> que fortalecen y optimizan tus funciones físicas, <b>electroterapia</b> para estimular la recuperación de los tejidos y otras modalidades adaptadas a tus necesidades particulares.',
       isOpen: false
     },
     {
       icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-check"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>',
       titulo: 'REEVALUACIÓN',
-      descripcion: 'Monitoreo regularmente tu progreso mediante evaluaciones periódicas para asegurar que el tratamiento está siendo efectivo. Esto me permite ajustar el plan según sea necesario para optimizar los resultados.',
+      descripcion: 'Realizo un <b>monitoreo regular</b> de tu progreso a través de <b>evaluaciones periódicas</b>, lo que me permite medir de forma objetiva cómo avanzas y garantizar que el <b>tratamiento</b> está siendo <b>efectivo</b>. Este seguimiento constante es esencial para identificar cualquier área que necesite ajustes y <b>realizar las modificaciones</b> necesarias en el plan de acción. Al adaptar el tratamiento según tus necesidades cambiantes, puedo <b>optimizar los resultados</b> y asegurar que alcances tus objetivos de salud y recuperación de manera eficiente y sostenible. Este enfoque proactivo también fomenta tu <b>compromiso</b> y confianza en el proceso.',
       isOpen: false
     },
     {
       icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></svg>',
       titulo: 'PROPUESTA DE REHADAPTACIÓN INDIVIDUALIZADA',
-      descripcion: 'Desarrollo un programa personalizado de rehabilitación que incluye ejercicios específicos, recomendaciones de actividad física y modificaciones en el estilo de vida, todo adaptado a tus necesidades y objetivos individuales.',
+      descripcion: 'Desarrollo un <b>programa personalizado</b> de rehabilitación <b>diseñado específicamente para ti</b>, que incluye ejercicios específicos orientados a mejorar tu función física y promover la recuperación activa. Todo el programa está cuidadosamente <b>adaptado a tus necesidades</b> individuales, asegurando un enfoque integral que maximice tu progreso y facilite el <b>logro de tus metas</b> de salud y bienestar.',
       isOpen: false
     },
     {
       icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-stethoscope"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></svg>',
       titulo: 'SEGUIMIENTO CONTÍNUO',
-      descripcion: 'Mantengo un seguimiento constante de tu evolución, ajustando el tratamiento según sea necesario y proporcionando apoyo continuo para asegurar resultados óptimos a largo plazo y prevenir recaídas.',
+      descripcion: 'Mantengo un <b>seguimiento constante</b> de tu evolución, ajustando el tratamiento según sea necesario y proporcionando <b>apoyo continuo</b> para asegurar <b>resultados óptimos</b> a largo plazo y prevenir recaídas.',
       isOpen: false
     },
   ];
