@@ -23,12 +23,13 @@
     <div class="lista-maquinas">
       <div class="container mx-auto py-12 xl:px-40">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div *ngFor="let servicio of servicios; let last = last"
+          <div *ngFor="let servicio of servicios; let i = index"
+              class="bg-[#cdbfb0] rounded-lg overflow-hidden"
               [ngClass]="{
-                'sm:col-span-2 lg:col-span-1': last && servicios.length % 2 === 1,
-                'lg:col-span-3': last && servicios.length % 3 === 1
-              }"
-              class="bg-[#cdbfb0] rounded-lg overflow-hidden">
+                'sm:col-span-1 lg:col-span-1': true,
+                'md:col-span-1': i % 3 === 0 || i % 3 === 1,
+                'md:col-span-2': i % 3 === 2
+              }">
             <!-- Skeleton loader -->
             <div *ngIf="!servicio.imageLoaded"
                 class="animate-pulse">
@@ -51,7 +52,7 @@
                   [attr.loading]="servicio.imgLoading">
               <div class="p-6">
                 <h3 class="text-2xl font-bold text-white mb-4 text-center">{{servicio.nombreMaquina}}</h3>
-                <p class="text-white text-md leading-relaxed" [innerHTML]="servicio.descripcion | safeHtml">
+                <p class="text-white text-md leading-relaxed" [innerHTML]="servicio.descripcion">
                 </p>
               </div>
             </ng-container>
