@@ -15,8 +15,10 @@ import gsap from 'gsap';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { ScrollService } from './scroll.service';
 import { ViewportScroller } from '@angular/common';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-root',
@@ -100,6 +102,7 @@ export class AppComponent {
         ease: "power2.inOut",
         onComplete: () => {
           this.restaurarScroll();
+          document.querySelector("#logoDiv")?.remove();
         }
       }
     );
@@ -247,5 +250,8 @@ export class AppComponent {
     document.body.style.width = '';
     document.body.style.top = '';
     document.body.style.left = '';
+
+    // Reinicializar ScrollTrigger después de restaurar el scroll
+    ScrollTrigger.refresh();
   }
 }

@@ -90,29 +90,29 @@ export class ExperienciaComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    // if (isPlatformBrowser(this.platformId)) {
-    //   const experienciaCards = document.querySelectorAll('.experiencia-card');
-    //   experienciaCards.forEach((card, index) => {
-    //     gsap.set(card, {
-    //       opacity: 0,
-    //       y: 100
-    //     });
+    if (isPlatformBrowser(this.platformId)) {
+      const experienciaCards = document.querySelectorAll('.experiencia-card');
+      experienciaCards.forEach((card, index) => {
+        gsap.set(card, {
+          opacity: 0,
+          y: 100
+        });
 
-    //     gsap.to(card, {
-    //       opacity: 1,
-    //       y: 0,
-    //       duration: 0.8,
-    //       ease: "power2.out",
-    //       scrollTrigger: {
-    //         trigger: card,
-    //         start: "top 5%",
-    //         end: "top 25%",
-    //         toggleActions: "play none none reverse",
-    //         markers: true, // Para debug
-    //       }
-    //     });
-    //   });
-    // }
+        gsap.to(card, {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 85%",
+            end: "top 65%",
+            toggleActions: "play none none reverse",
+            markers: true, // Para debug
+          }
+        });
+      });
+    }
   }
 
   mostrarDetalles(experiencia: any) {
