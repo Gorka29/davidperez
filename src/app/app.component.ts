@@ -38,13 +38,13 @@ export class AppComponent {
       const logoMovimiento = document.getElementById('logoMovimiento');
       const headerMovimiento = document.getElementById('headerMovimiento');
       const footerMovimiento = document.getElementById('footerMovimiento');
-      const contenedorPrincipal = document.querySelector('.contenedor-principal');
+      const inicio = document.getElementById('inicio');
 
-      if (logoMovimiento && headerMovimiento && footerMovimiento && contenedorPrincipal) {
+      if (logoMovimiento && headerMovimiento && footerMovimiento && inicio) {
         logoMovimiento.classList.remove('hidden');
         headerMovimiento.classList.remove('hidden');
         footerMovimiento.classList.remove('hidden');
-        contenedorPrincipal.classList.remove('hidden');
+        inicio.classList.remove('hidden');
       }
     }, 0);
     setTimeout(() => {
