@@ -108,7 +108,7 @@ export class ExperienciaComponent implements OnInit, AfterViewInit {
             start: "top 85%",
             end: "top 65%",
             toggleActions: "play none none reverse",
-            markers: true, // Para debug
+            markers: false, // Para debug
           }
         });
       });
