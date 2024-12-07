@@ -16,14 +16,18 @@
           </div>
         </div>
         <div class="contenido-servicio" [ngClass]="{'active': servicio.isOpen}">
-          <p class="text-lg">{{servicio.descripcion}}</p>
+          <div [innerHTML]="servicio.descripcion"></div>
         </div>
       </div>
     </div>
     <div class="lista-maquinas">
       <div class="container mx-auto py-12 xl:px-40">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div *ngFor="let servicio of servicios"
+          <div *ngFor="let servicio of servicios; let last = last"
+              [ngClass]="{
+                'sm:col-span-2 lg:col-span-1': last && servicios.length % 2 === 1,
+                'lg:col-span-3': last && servicios.length % 3 === 1
+              }"
               class="bg-[#cdbfb0] rounded-lg overflow-hidden">
             <!-- Skeleton loader -->
             <div *ngIf="!servicio.imageLoaded"
@@ -47,8 +51,7 @@
                   [attr.loading]="servicio.imgLoading">
               <div class="p-6">
                 <h3 class="text-2xl font-bold text-white mb-4 text-center">{{servicio.nombreMaquina}}</h3>
-                <p class="text-white text-md leading-relaxed">
-                  {{servicio.descripcion}}
+                <p class="text-white text-md leading-relaxed" [innerHTML]="servicio.descripcion | safeHtml">
                 </p>
               </div>
             </ng-container>
