@@ -8,6 +8,12 @@ import { gsap } from 'gsap';
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.scss'
 })
-export class InicioComponent {
+export class InicioComponent implements OnInit{
 
+  ngOnInit(): void {
+    setTimeout(() => {
+      const imagen = document.querySelector('img');
+      imagen?.classList.remove('hidden');
+    }, 100);
+  }
 }
