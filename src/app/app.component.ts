@@ -14,7 +14,6 @@ import { NavigationEnd, RouterModule, Router } from '@angular/router';
 import gsap from 'gsap';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { ScrollService } from './scroll.service';
-import { ViewportScroller } from '@angular/common';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(MotionPathPlugin);
@@ -102,7 +101,6 @@ export class AppComponent {
         ease: "power2.inOut",
         onComplete: () => {
           this.restaurarScroll();
-          document.querySelector("#logoDiv")?.remove();
         }
       }
     );
