@@ -9,7 +9,7 @@ import { ContactoComponent } from "./contacto/contacto.component";
 import { FormacionComponent } from "./formacion/formacion.component";
 import { TestimoniosComponent } from "./testimonios/testimonios.component";
 import { filter } from 'rxjs/operators';
-import { NavigationEnd, RouterModule, Router, RouterOutlet } from '@angular/router';
+import { NavigationEnd, RouterModule, Router } from '@angular/router';
 
 import gsap from 'gsap';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
@@ -21,7 +21,7 @@ gsap.registerPlugin(MotionPathPlugin);
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, ServiciosComponent, ContactoComponent, InicioComponent, SobreMiComponent, ExperienciaComponent, FormacionComponent, TestimoniosComponent, RouterModule, RouterOutlet],
+  imports: [HeaderComponent, FooterComponent, ServiciosComponent, ContactoComponent, InicioComponent, SobreMiComponent, ExperienciaComponent, FormacionComponent, TestimoniosComponent, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -29,9 +29,8 @@ export class AppComponent {
   title = 'davidperez';
   @Output() sectionSelected = new EventEmitter<string>();
   private readonly ANIMATION_DELAY = 100;
-  private readonly SVG_SELECTOR = '#davidperezfisioterapia';
 
-  constructor(private router: Router, private scrollService: ScrollService, private viewportScroller: ViewportScroller) {}
+  constructor(private router: Router, private scrollService: ScrollService) {}
 
   ngOnInit() {
     setTimeout(() => {
@@ -97,7 +96,7 @@ export class AppComponent {
       {
         width: "100%",
         height: "0",
-        delay: 3.4,
+        delay: 2.5,
         ease: "power2.inOut",
         onComplete: () => {
           this.restaurarScroll();
@@ -118,7 +117,7 @@ export class AppComponent {
         width: 100,   // Tamaño inicial más pequeño
         height: 65,   // Mantenemos la proporción (262/330 * 100)
         duration: 1,
-        delay: 3,
+        delay: 2,
         ease: "power2.inOut",
       }
     );
