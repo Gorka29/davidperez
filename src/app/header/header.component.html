@@ -2,34 +2,18 @@
   <div class="container mx-auto">
     <nav class="py-2 px-4 flex flex-col xl:flex-row justify-between items-center">
       <div class="flex justify-center h-12 xl:justify-between items-center w-full md:w-auto" routerLink="/">
-
-
-
-
-      <!-- Botón de hamburguesa solo para móviles -->
-      <button class="absolute right-4 w-6 h-6 flex items-center justify-center" (click)="toggleMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute transition-all duration-300 ease-in-out main-color" [ngClass]="{'opacity-0 rotate-90': menuAbierto, 'opacity-100 rotate-0': !menuAbierto}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute transition-all duration-300 ease-in-out main-color" [ngClass]="{'opacity-100 rotate-0': menuAbierto, 'opacity-0 -rotate-90': !menuAbierto}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
+        <!-- Botón de hamburguesa -->
+        <button class="absolute right-4 w-6 h-6 flex items-center justify-center" (click)="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute transition-all duration-300 ease-in-out main-color" [ngClass]="{'opacity-0 rotate-90': menuAbierto, 'opacity-100 rotate-0': !menuAbierto}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute transition-all duration-300 ease-in-out main-color" [ngClass]="{'opacity-100 rotate-0': menuAbierto, 'opacity-0 -rotate-90': !menuAbierto}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
-
-      <!-- Menú para pantallas grandes -->
-      <!-- <ul class="flex flex-row space-x-4">
-        <li><a class="inicio uppercase texto-principal hover:texto-principal-hover cursor-pointer" (click)="onSectionClick('inicio')">Inicio</a></li>
-        <li><a class="sobre-mi uppercase texto-principal hover:texto-principal-hover cursor-pointer" (click)="onSectionClick('sobre-mi')">Sobre mí</a></li>
-        <li><a class="sobre-mi uppercase texto-principal hover:texto-principal-hover cursor-pointer" (click)="onSectionClick('formacion')">Formación</a></li>
-        <li><a class="proyectos uppercase texto-principal hover:texto-principal-hover cursor-pointer" (click)="onSectionClick('experiencia')">Experiencia</a></li>
-        <li><a class="proyectos uppercase texto-principal hover:texto-principal-hover cursor-pointer" (click)="onSectionClick('servicios')">Servicios</a></li>
-        <li><a class="proyectos uppercase texto-principal hover:texto-principal-hover cursor-pointer" (click)="onSectionClick('testimonios')">Testimonios</a></li>
-        <li><a class="contacto uppercase texto-principal hover:texto-principal-hover cursor-pointer" (click)="onSectionClick('contacto')">Contacto</a></li>
-      </ul> -->
     </nav>
-
-    <!-- Menú móvil -->
+    <!-- Menú -->
     <div class="overflow-hidden transition-all duration-300 ease-in-out"
          [ngClass]="{'max-h-0 opacity-0': !menuAbierto, 'max-h-96 opacity-100': menuAbierto}">
       <ul class="container mx-auto p-4 space-y-2 text-center">

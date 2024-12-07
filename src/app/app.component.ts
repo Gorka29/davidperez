@@ -35,6 +35,19 @@ export class AppComponent {
 
   ngOnInit() {
     setTimeout(() => {
+      const logoMovimiento = document.getElementById('logoMovimiento');
+      const headerMovimiento = document.getElementById('headerMovimiento');
+      const footerMovimiento = document.getElementById('footerMovimiento');
+      const contenedorPrincipal = document.querySelector('.contenedor-principal');
+
+      if (logoMovimiento && headerMovimiento && footerMovimiento && contenedorPrincipal) {
+        logoMovimiento.classList.remove('hidden');
+        headerMovimiento.classList.remove('hidden');
+        footerMovimiento.classList.remove('hidden');
+        contenedorPrincipal.classList.remove('hidden');
+      }
+    }, 0);
+    setTimeout(() => {
       window.scrollTo(0, 0);
 
       document.body.style.overflow = 'hidden';
@@ -98,7 +111,6 @@ export class AppComponent {
         opacity: 1,
         width: 330,   // Tamaño final original
         height: 262,  // Tamaño final original
-
       },
       {
         y: 0,
