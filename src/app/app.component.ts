@@ -107,7 +107,7 @@ export class AppComponent {
 
     gsap.fromTo("#logoMovimiento svg",
       {
-        y: "30vh",
+        y: "45vh",
         opacity: 1,
         width: 330,   // Tamaño final original
         height: 262,  // Tamaño final original
@@ -120,6 +120,7 @@ export class AppComponent {
         duration: 1,
         delay: 2,
         ease: "power2.inOut",
+        marginTop: "63px"
       }
     );
 
