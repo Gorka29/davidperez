@@ -26,7 +26,9 @@
           <div *ngFor="let servicio of servicios; let i = index"
               class="bg-[#cdbfb0] rounded-lg overflow-hidden"
               [ngClass]="{
-                'sm:col-span-1 lg:col-span-1': true,
+                'lg:col-span-1': true,
+                'sm:col-span-1': i % 3 === 0 || i % 3 === 1,
+                'sm:col-span-2': i % 3 === 2,
                 'md:col-span-1': i % 3 === 0 || i % 3 === 1,
                 'md:col-span-2': i % 3 === 2
               }">
