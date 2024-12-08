@@ -117,11 +117,13 @@ export class ExperienciaComponent implements OnInit, AfterViewInit {
 
   mostrarDetalles(experiencia: any) {
     Swal.fire({
-      title: experiencia.nombreEmpresa,
+      title: `<div style="font-family: 'Hellix', sans-serif;">${experiencia.nombreEmpresa}</div>`,
       html: `
+      <div style="font-family: 'Hellix', sans-serif;">
         <p style="margin-top: -15px;">${experiencia.periodo}</p>
         <img src="${experiencia.imgURL}" alt="${experiencia.nombreEmpresa}" class="mx-auto my-4 w-24 h-24 md:w-32 md:h-32 object-contain">
         <p class="mt-4 text-gray-600 leading-relaxed text-start">${experiencia.descripcion}</p>
+      </div>
       `,
       imageAlt: experiencia.nombreEmpresa,
       showClass: {
@@ -131,6 +133,7 @@ export class ExperienciaComponent implements OnInit, AfterViewInit {
         popup: 'animate__animated animate__fadeOutUp'
       },
       customClass: {
+        title: 'font-hellix',
         popup: 'rounded-popup swal-mobile',
         confirmButton: 'px-4 py-2 font-semibold bg-white border-[2px] border-solid border-[#cdbfb0] text-[#cdbfb0] rounded-lg transition-colors duration-300 hover:bg-[#b5a797] hover:text-white'
       },
