@@ -1,0 +1,17 @@
+@media (max-width: 900px) {
+  #fotoPrincipalHorizontal {
+    display: none;
+  }
+  #fotoPrincipalVertical {
+    display: block;
+  }
+}
+
+@media (min-width: 900px) {
+  #fotoPrincipalHorizontal {
+    display: block;
+  }
+  #fotoPrincipalVertical {
+    display: none;
+  }
+}
