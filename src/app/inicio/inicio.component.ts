@@ -15,6 +15,7 @@ export class InicioComponent implements OnInit, AfterViewInit {
   private touchStartX: number = 0;
   private touchEndX: number = 0;
   private minSwipeDistance: number = 50;
+  private touchStartY: number = 0;
 
   ngOnInit() {
     // Dejamos el ngOnInit vacío
@@ -82,13 +83,25 @@ export class InicioComponent implements OnInit, AfterViewInit {
     this.slides[this.currentSlide].classList.add('active');
   }
 
-  private handleTouchStart(e: TouchEvent) {
-    this.touchStartX = e.touches[0].clientX;
+  private handleTouchMove(e: TouchEvent) {
+    const touchCurrentX = e.touches[0].clientX;
+    const touchCurrentY = e.touches[0].clientY;
+
+    // Calculamos la diferencia en X e Y desde el inicio del toque
+    const deltaX = this.touchStartX - touchCurrentX;
+    const deltaY = Math.abs(e.touches[0].clientY - this.touchStartY);
+
+    // Solo prevenimos el scroll si el movimiento horizontal es mayor que el vertical
+    if (Math.abs(deltaX) > deltaY) {
+      e.preventDefault();
+    }
+
+    this.touchEndX = touchCurrentX;
   }
 
-  private handleTouchMove(e: TouchEvent) {
-    e.preventDefault();
-    this.touchEndX = e.touches[0].clientX;
+  private handleTouchStart(e: TouchEvent) {
+    this.touchStartX = e.touches[0].clientX;
+    this.touchStartY = e.touches[0].clientY;
   }
 
   private handleTouchEnd() {
