@@ -45,10 +45,18 @@ export class InicioComponent implements OnInit, AfterViewInit {
     }
   }
 
+  private resetInterval() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+    this.intervalId = setInterval(() => this.nextSlide(), 8000);
+  }
+
   public goToSlide(index: number) {
     this.slides[this.currentSlide].classList.remove('active');
     this.currentSlide = index;
     this.slides[this.currentSlide].classList.add('active');
+    this.resetInterval();
   }
 
   private nextSlide() {
