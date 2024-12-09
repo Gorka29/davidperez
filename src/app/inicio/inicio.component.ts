@@ -12,6 +12,9 @@ export class InicioComponent implements OnInit, AfterViewInit {
   public currentSlide = 0;
   public slides: HTMLElement[] = [];
   private intervalId: any;
+  private touchStartX: number = 0;
+  private touchEndX: number = 0;
+  private minSwipeDistance: number = 50;
 
   ngOnInit() {
     // Dejamos el ngOnInit vacío
@@ -34,6 +37,14 @@ export class InicioComponent implements OnInit, AfterViewInit {
 
       document.querySelector('.prev')?.addEventListener('click', () => this.prevSlide());
       document.querySelector('.next')?.addEventListener('click', () => this.nextSlide());
+
+      // Añadir eventos touch
+      const carousel = document.querySelector('.carousel');
+      if (carousel) {
+        carousel.addEventListener('touchstart', (e: Event) => this.handleTouchStart(e as TouchEvent));
+        carousel.addEventListener('touchmove', (e: Event) => this.handleTouchMove(e as TouchEvent));
+        carousel.addEventListener('touchend', () => this.handleTouchEnd());
+      }
 
       this.intervalId = setInterval(() => this.nextSlide(), 8000);
     }, 0);
@@ -69,5 +80,30 @@ export class InicioComponent implements OnInit, AfterViewInit {
     this.slides[this.currentSlide].classList.remove('active');
     this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
     this.slides[this.currentSlide].classList.add('active');
+  }
+
+  private handleTouchStart(e: TouchEvent) {
+    this.touchStartX = e.touches[0].clientX;
+  }
+
+  private handleTouchMove(e: TouchEvent) {
+    e.preventDefault();
+    this.touchEndX = e.touches[0].clientX;
+  }
+
+  private handleTouchEnd() {
+    const swipeDistance = this.touchEndX - this.touchStartX;
+
+    if (Math.abs(swipeDistance) > this.minSwipeDistance) {
+      if (swipeDistance > 0) {
+        this.prevSlide();
+      } else {
+        this.nextSlide();
+      }
+      this.resetInterval();
+    }
+
+    this.touchStartX = 0;
+    this.touchEndX = 0;
   }
 }
