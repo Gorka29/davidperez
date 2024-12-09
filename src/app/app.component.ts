@@ -232,7 +232,7 @@ export class AppComponent {
 
       // Calculamos la posición final de una vez
       const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      const offsetPosition = elementPosition + window.pageYOffset - offset + 305; // Añadimos 305px extra
 
       // Realizamos el scroll suave en una sola operación
       window.scrollTo({
