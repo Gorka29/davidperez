@@ -97,8 +97,8 @@ export class AppComponent {
       {
         width: "100%",
         height: "0",
-        delay: 2.5,
-        ease: "power2.inOut",
+        delay: 2.4,
+        ease: "sine.inOut",
         onComplete: () => {
           this.restaurarScroll();
         }
