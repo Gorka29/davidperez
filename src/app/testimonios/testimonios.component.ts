@@ -67,7 +67,7 @@ export class TestimoniosComponent implements OnInit, OnDestroy {
       "texto": "'Cuando he necesitado tratarme contigo cualquier lesión/molestia, la recuperación ha sido fantástica. Destacaría tu perfeccionismo y profesionalidad, además de tu gran atención al cliente. Recomendaría a todo el mundo tu servicio'",
       "autor": "Iñigo Arrieta",
       "profesion": "Futbolista CD Gazteluzarra",
-      "imagen": "/assets/img/fotosTestimonios/alvaroIglesias.webp"
+      "imagen": "/assets/img/fotosTestimonios/iñigoArrieta.webp"
     },
     {
       "id": 7,
